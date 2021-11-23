@@ -2,13 +2,6 @@
 
 include 'conexion_be.php';//conexion a base de datos
 
-/*
-if ($conexion) {
-    echo "Conexion exitosa !!!";
-}else{
-    echo "Conexion fallida";
-}*/
-
 $nombre=$_POST['nombre'];//recibimos el nombre
 $apellido=$_POST['apellido'];//recibimos el apellido
 $email=$_POST['email'];//recibimos el email
