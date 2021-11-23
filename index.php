@@ -40,7 +40,7 @@
  <!--------------------------------------------------------------------------->
  <!--formulario registro-->
  <!--------------------------------------------------------------------------->
-            <form class="formulario__registro" action="registro_usuario_be.php" method="POST">
+            <form class="formulario__registro" action="conexion_be.php" method="post">
                 <h2>Registrarse</h2>
                 <input type="text" placeholder="Nombre" name="nombre" required> 
                 <input type="text" placeholder="Apellido" name="apellido" required> 
