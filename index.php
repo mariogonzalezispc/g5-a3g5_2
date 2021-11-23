@@ -40,11 +40,12 @@
  <!--------------------------------------------------------------------------->
  <!--formulario registro-->
  <!--------------------------------------------------------------------------->
-            <form class="formulario__registro" action="./php/registro_usuario_be.php" method="post">
+            <form class="formulario__registro" action="./php/carga_registro.php" method="post">
                 <h2>Registrarse</h2>
+                <input type="hidden" id="1" name="tipo" value="1" >
                 <input type="text" placeholder="Nombre" name="nombre" required> 
                 <input type="text" placeholder="Apellido" name="apellido" required> 
-                <input type="text" placeholder="Correo electronico" name="email" required> 
+                <input type="email" placeholder="Correo electronico" name="email" required> 
                 <input type="password" placeholder="Contraseña" name="clave1" required> 
                 <input type="password" placeholder="Repetir contraseña" name="clave2" required> 
                 <button>Registrarse</button>

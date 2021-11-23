@@ -1,17 +1,17 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    margin: 0;/*margen en 0*/
+    padding: 0;/*padding en 0*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    text-decoration: none;/*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;/*fuente*/
 }
 
 body{
-    background-image: url(../img/Polinesia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url(../img/Polinesia.jpg);/*imagen de fondo*/
+    background-size: cover;/*para que se vea la imagen de fondo*/
+    background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo*/
+    background-position: center;/*para que se vea la imagen de fondo*/
 }
 
 main{
@@ -33,32 +33,32 @@ main{
     display: flex;
     justify-content: center;/*centra el contenido*/
     /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
-    /*background-color: rgba(0,128,255,0.5);*/
+    background-color: rgba(0,128,255,0.5);/*color de fondo caja trasera*/
 }
-.caja__trasera div{
-    margin: 100px 40px;
-    color: white;
-    transition: all 0.5s;
+.caja__trasera div{/*para centrar el contenido*/
+    margin: 100px 40px;/*margen de la caja trasera*/
+    color: white;/*color de texto*/
+    transition: all 0.5s;/*transicion de tamaño*/
+}
 
-}
-.caja__trasera div p,
-.caja__trasera div button{
-    margin-top: 30px;
+.caja__trasera div p,/*para centrar el contenido*/
+.caja__trasera div button{/*para centrar el contenido*/
+    margin-top: 30px;/*margen de la caja trasera*/
 }
 .caja__trasera h3{
-    font-weight: 400;
-    font-size: 26pxm;
+    font-weight: 400;/*para que el texto sea mas liviano*/
+    font-size: 26pxm;/*para que el texto sea mas liviano*/
 }
-.caja__trasera button{
-    padding: 10px 40px;
-    border: 2px solid;
-    background: transparent;
-    font-size: 14px; 
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    transition: all 0.4s;
+.caja__trasera button{/*para centrar el contenido*/
+    padding: 10px 40px;/*para que el texto sea mas liviano*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 14px; /*para que el texto sea mas liviano*/
+    font-weight: 600;/*para que el texto sea mas liviano*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
 }
 .caja__trasera button:hover{
     background:white;
