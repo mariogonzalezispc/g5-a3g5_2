@@ -10,7 +10,7 @@
     if ($tipo_form=="1") {//formulario registro cliente nuevo
 
     echo "formulario registro Cliente nuevo   TIPO = 1";
-
+    
     }
 
 //---------------------------------------------------------------------------------
