@@ -10,6 +10,18 @@
     if ($tipo_form=="1") {//formulario registro cliente nuevo
 
     echo "formulario registro Cliente nuevo   TIPO = 1";
+        /*
+    $nombre=$_POST['nombre'];//recibimos el nombre
+    $apellido=$_POST['apellido'];//recibimos el apellido
+    $email=$_POST['email'];//recibimos el email
+    $pass1=$_POST['clave1'];//recibimos la clave
+    $pass2=$_POST['clave2'];//recibimos la clave
+
+    $insertar="INSERT INTO`usuario`(`id_usuario`,`usuario`,`clave`, `cliente`, `estado`)
+               VALUES (NULL,'$nombre','$pass1','1','1')";//insertamos los datos en la tabla usuarios
+
+    $ejecutar = mysqli_query($conexion, $insertar);//conectamos y ejecutamos la Carga
+        */
     
     }
 
