@@ -3,20 +3,20 @@
 document.getElementById("btn__iniciar-sesion").addEventListener("click",iniciarSesion);
 
 //funcion para validar el formulario de registro
-document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
+//document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
 
 //funcion para validar el formulario de registro
 window.addEventListener("resize",anchoPagina);
 
-var contenedor_login_registro=document.querySelector(".contenedor__login-registro");
-var formulario_login=document.querySelector(".formulario__login");
-var formulario_registro=document.querySelector(".formulario__registro");
-var caja_trasera_login=document.querySelector(".caja__trasera_login");
-var caja_trasera_registro=document.querySelector(".caja__trasera_registro");
+var contenedor_login_registro=document.querySelector(".contenedor__login-registro");//funcion para validar el formulario de registro
+var formulario_login=document.querySelector(".formulario__login");//variable para cargar la calse formulario__login
+var formulario_registro=document.querySelector(".formulario__registro");//funcion para validar el formulario de registro
+var caja_trasera_login=document.querySelector(".caja__trasera_login");//funcion para validar el formulario de login 
+var caja_trasera_registro=document.querySelector(".caja__trasera_registro");//funcion para validar el formulario de registro
 
 //----------------------------------------------------------------------------------------------------------------------
-function anchoPagina(){
-    if (window.innerWidth>850){//
+function anchoPagina(){//funcion para modificar el codigo html 
+    if (window.innerWidth>850){//Si el ancho de la pantalla es mayor a 850px
         caja_trasera_registro.style.display="block";//muestra la caja trasera del formulario de registro
         caja_trasera_login.style.display="block";//oculta la caja trasera del formulario de login
     }else{
@@ -38,7 +38,7 @@ if (window.innerWidth>850){//
     formulario_login.style.display="block";//muestra el formulario de login
     caja_trasera_registro.style.opacity="1";//muestra la caja trasera del formulario de registro
     caja_trasera_login.style.opacity="0";//oculta la caja trasera del formulario de login
-}else{
+}else{//
     formulario_registro.style.display="none";//oculta el formulario de registro
     contenedor_login_registro.style.left="0px";//mueve el contenedor a la izquierda
     formulario_login.style.display="block";//muestra el formulario de login
