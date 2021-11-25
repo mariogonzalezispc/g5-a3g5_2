@@ -1,0 +1,136 @@
+*{
+    margin: 0;/*margen en 0*/
+    padding: 0;/*padding en 0*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    text-decoration: none;/*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;/*fuente*/
+}
+
+body{
+    /*background-image: url(../img/Polinesia.jpg);imagen de fondo*/
+    background-image: url(../img/201-varejo.jpg);/*imagen de fondo*/
+    background-size: cover;/*para que se vea la imagen de fondo*/
+    background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo*/
+    background-position: center;/*para que se vea la imagen de fondo*/
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+/*--------------------------------------------------------------*/
+.encabezado     /*para el encabezado*/
+    {
+        background: rgba(240, 172, 172, 0.6);/*color de fondo*/
+    }
+.encabezado .menu 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+ 
+    }
+.encabezado .menu ul
+    {
+        list-style: none; /*sacar los puntos de las viñetas*/
+        display: flex;/* deja uno al lado del otro en forma horizontal*/
+        justify-content: space-between;
+    }
+.encabezado .menu ul li ul 
+    {
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgb(203, 205, 36);
+        display: none; /*hago desaparecer el sub item*/
+    }
+.encabezado .menu ul li:hover >ul
+    { 
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgba(245, 143, 10, 0.3);   
+    }
+.encabezado .menu ul li ul li
+    {
+        width: 480px; /* hacemos crecer el ancho de los sub item*/
+    }
+    a
+    {
+        text-decoration: none; /*Sacar el subrrallado de las etiquetas*/
+        font-size: 20px;
+        color: rgb(203, 205, 36);
+        padding: 12px 20px;
+        display: block; /*es para que no se superpongan los sub item*/
+    }
+    a:hover
+    {
+        color: #fff;
+    }
+/*-----------------------------------------------------------------------------*/
+
+form{
+    border: 1px solid #E1E1E1;
+    border-radius: 7px;
+    padding: 20px;
+    width: 25%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*-------------------------------------------*/
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.30);
+    /*--------------------------------------------*/
+}
+label{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+    
+}
+
+input:focus, textarea:focus{
+    border: 3px solid red;
+}
+
+input[type="submit"] {
+    margin-bottom: 0;
+    background: blue;
+    color: white;
+    width: 47%;
+    float: left;
+    border-radius: 15px;
+}
+input[type="reset"] {
+    margin-bottom: 0;
+    background:grey;
+    color: white;
+    width: 47%;
+    float:right;
+    border-radius: 15px;
+}
+/*---------------------------------------------------------------------------------*/
