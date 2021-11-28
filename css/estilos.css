@@ -16,9 +16,9 @@ body{
 
 main{
     width: 100%;/*ancho del main*/
-    padding: 00px;
+    padding: 00px;/*padding en 0*/
     margin: auto;
-    margin-top: 0px;
+    margin-top: 100px;
 
 }
 /*--------------------------------------------------------------*/
@@ -31,6 +31,7 @@ main{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
  
     }
 .encabezado .menu ul
@@ -38,6 +39,7 @@ main{
         list-style: none; /*sacar los puntos de las viñetas*/
         display: flex;/* deja uno al lado del otro en forma horizontal*/
         justify-content: space-between;
+    
     }
 .encabezado .menu ul li ul 
     {
@@ -47,7 +49,8 @@ main{
         background: rgb(203, 205, 36);
         display: none; /*hago desaparecer el sub item*/
     }
-.encabezado .menu ul li:hover >ul
+.encabezado .menu ul li:hover > ul 
+
     { 
         display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
         flex-direction: column;/* deja en forma vertical los sub item*/
@@ -68,7 +71,7 @@ main{
     }
     a:hover
     {
-        color: #fff;
+        color: white;
     }
 
 
