@@ -16,10 +16,10 @@ body{
 }
 
 main{
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    margin-top: 100px;
+    width: 100%;/*ancho*/
+    padding: 20px;/*espacio entre el contenido y el borde*/
+    margin: auto;/*para que se vea en el centro*/
+    margin-top: 100px;/*espacio superior*/
 
 }
 /*--------------------------------------------------------------*/
@@ -45,7 +45,7 @@ main{
         display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
         flex-direction: column;/* deja en forma vertical los sub item*/
         position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgb(203, 205, 36);
+        background: rgb(203, 205, 36);/*color de fondo*/
         display: none; /*hago desaparecer el sub item*/
     }
 .encabezado .menu ul li:hover >ul
@@ -102,35 +102,35 @@ input, textarea{
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid blue;
-    outline: none;
+    outline: none;/*para que no se vea el recuadro en el input texto*/
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-textarea{
-    resize: vertical;
-    max-height: 300px;
-    min-height: 100px;
+textarea{/*para que se vea el textarea*/
+    resize: vertical;/*para que se vea vertical el textarea*/
+    max-height: 300px;/*Maxima altura del textarea*/
+    min-height: 100px;/*Minima altura del textarea*/
     
 }
 
-input:focus, textarea:focus{
-    border: 3px solid red;
+input:focus, textarea:focus{/*para que se vea el recuadro en el input texto*/
+    border: 1px solid red;
 }
 
-input[type="submit"] {
-    margin-bottom: 0;
-    background: blue;
-    color: white;
-    width: 47%;
-    float: left;
-    border-radius: 15px;
+input[type="submit"] {/*para que se vea el boton enviar*/
+    margin-bottom: 0;/*Margen inferior del boton enviar*/
+    background: blue;/*color de fondo*/
+    color: white;/*color del texto boton enviar*/
+    width: 47%;/*ancho del boton enviar*/
+    float: left;/*para que se vea el boton en la parte izquierda*/
+    border-radius: 15px;/*para que se vea el borde redondeado*/
 }
-input[type="reset"] {
-    margin-bottom: 0;
-    background:grey;
-    color: white;
-    width: 47%;
-    float:right;
-    border-radius: 15px;
+input[type="reset"] {/*para el boton reset del formulario*/
+    margin-bottom: 0;/*Margen inferior del boton reset*/
+    background:grey;/*color de fondo*/
+    color: white;/*color del texto del boton reset*/
+    width: 47%;/*ancho del boton reset*/
+    float:right;/*para que se vea a la derecha*/
+    border-radius: 15px;/*para que se vea redondeado*/
 }
 /*---------------------------------------------------------------------------------*/
