@@ -72,7 +72,8 @@ main{
         color: #fff;
     }
 /*-----------------------------------------------------------------------------*/
-
+/*formulario de contacto tres input + un text area + 2 botones*/
+/*-----------------------------------------------------------------------------*/
 form{
     border: 1px solid #E1E1E1;
     border-radius: 7px;
@@ -103,7 +104,7 @@ input, textarea{
     box-sizing: border-box;
     border: 1px solid blue;
     outline: none;/*para que no se vea el recuadro en el input texto*/
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 textarea{/*para que se vea el textarea*/
@@ -132,5 +133,10 @@ input[type="reset"] {/*para el boton reset del formulario*/
     width: 47%;/*ancho del boton reset*/
     float:right;/*para que se vea a la derecha*/
     border-radius: 15px;/*para que se vea redondeado*/
+}
+.h2{
+    font-size: 30px;
+    color: rgb(203, 205, 36);
+    text-align: center;
 }
 /*---------------------------------------------------------------------------------*/
