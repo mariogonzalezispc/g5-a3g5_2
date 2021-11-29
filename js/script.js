@@ -3,7 +3,7 @@
 document.getElementById("btn__iniciar-sesion").addEventListener("click",iniciarSesion);
 
 //funcion para validar el formulario de registro
-//document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
+document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
 
 //funcion para validar el formulario de registro
 window.addEventListener("resize",anchoPagina);
