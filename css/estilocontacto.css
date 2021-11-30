@@ -134,9 +134,10 @@ input[type="reset"] {/*para el boton reset del formulario*/
     float:right;/*para que se vea a la derecha*/
     border-radius: 15px;/*para que se vea redondeado*/
 }
-.h2{
+ form h2{
     font-size: 30px;
-    color: rgb(203, 205, 36);
+    color: black;
     text-align: center;
+    margin-bottom: 4px;
 }
 /*---------------------------------------------------------------------------------*/
