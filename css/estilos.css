@@ -27,6 +27,14 @@ main{
     {
         background: rgba(240, 172, 172, 0.3);/*color de fondo*/
     }
+
+.encabezado .reloj/*para el reloj*/
+    {
+        background: rgba(240, 172, 172, 0.3);/*color de fondo*/
+        
+    }    
+
+
 .encabezado .menu {
     display: flex;
     justify-content: space-around;
@@ -126,8 +134,10 @@ main{
     background:white;/*para que el boton sea blanco al pasar el puntero*/
     color: #46a2fd;/*para que el texto sea azul al pasar el puntero*/
 }
-/*Formularios*/
-.contenedor__login-registro{
+/*--------------------------------------------------------------*/
+/*Formularios Login*/
+/*--------------------------------------------------------------*/
+.contenedor__login{
     display: flex;/*deja uno al lado del otro en forma horizontal*/
     align-items: center;/*centra el contenido*/
     width: 100%;/*ancho del contenedor*/
@@ -138,20 +148,20 @@ main{
     transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);/*transicion de tamaño*/
 
 }
-.contenedor__login-registro form{
+.contenedor__login form{
     width: 100%;     
     padding: 80px 20px;
     background: white;/*cambiar a blanco*/
     position: absolute;
     border-radius: 20px;
 }
-.contenedor__login-registro form h2{
+.contenedor__login form h2{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color:  #46a2fd;
 }
-.contenedor__login-registro form input{
+.contenedor__login form input{
     width: 100%;
     margin-top: 20px;/*cambiar a 20px*/
     padding: 10px;/*cambiar a 10px*/
@@ -160,7 +170,7 @@ main{
     font-size: 16px;
     outline: none;
 }
-.contenedor__login-registro form button{
+.contenedor__login form button{
   padding: 10px 40px;
   margin-top: 40px;
   border: none;
@@ -174,9 +184,17 @@ main{
     opacity: 1;
     display: block;
 }
-.formulario__registro{
-    display: none;
-}
+/*------------------------------------------------------*/
+/*Formularios Registro*/
+/*------------------------------------------------------*/
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------*/
@@ -196,12 +214,12 @@ main{
         position: absolute;
     }
     /*Formularios*/
-    .contenedor__login-registro{
+    .contenedor__login{
         top: -100px;
         left: -5px;
         margin: auto;
     }
-    .contenedor__login-registro form{
+    .contenedor__login form{
         position: relative;
     }
 }

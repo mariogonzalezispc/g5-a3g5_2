@@ -12,34 +12,41 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 </script><!-- integra libreria para reloj y fecha-->
+
 <link rel="stylesheet" href="responsive-nav.css">
 <script src="responsive-nav.js"></script>
 
 
 <body>
 
-    <!--------------------------------------------------------------------------------------->
-    <header class="encabezado"><!--Encabezado-->
-        <nav class="menu"><!--Menu-->
-            <div>
-                <a href="index.html">
-                </a>
-            </div>
+<!--------------------------------------------------------------------------------------->
+<header class="encabezado">
+    <nav class="menu">
+        <div class="reloj">
             <ul> 
-            <li><a id="dia"class="now"></a></li>
-            <li><a id="hora"class="now"></a></li>
-            </ul>
+                <li><a id="dia"class="now"></a></li>
+                <li><a id="hora"class="now"></a></li>
+                </ul>
+        </div>
+        <ul>
+            <li><a  href="index.html">Inicio</a></li>
+            <li><a  href="producto.html">Productos</a></li> 
+            <li><a  href="contacto.html">Contacto</a></li>
+            <li><a  href="login.html" >Login</a></li> 
+            <li><a  href="registro.html" >Registro</a></li>              
+            <li><a  href="acerca.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+<!--------------------------------------------------------------------------------------->
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li><!--Referencia de link a index.html-->
-                <li><a href="login.html">Login</a></li><!--Referencia de link a login.html-->
-                <li><a href="producto.html">Productos</a></li><!--Referencia de link a producto.html-->
-                <li><a href="contacto.html">Contacto</a></li><!--Referencia de link a contacto.html-->
-                <li><a href="acerca.html">Acerca de</a></li><!--Referencia de link a acerca.html-->
-            </ul>
-        </nav><!--Fin de menu-->
-    </header><!--Fin de encabezado-->
-    <!--------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
 
 
 
@@ -65,7 +72,7 @@
             <!--------------------------------------------------------------------------->
             <!--formulario iniciar sesion-->
             <!--------------------------------------------------------------------------->
-            <div class="contenedor__login-registro">
+            <div class="contenedor__login">
                 <form action="" class="formulario__login"><!--formulario iniciar sesion-->
                     <h2>Iniciar sesion</h2><!--Titulo formulario iniciar sesion-->
                     <input type="hidden" id="2" name="tipo" value="2">
@@ -73,19 +80,36 @@
                     <input type="password" placeholder="Contraseña" required>
                     <button>Iniciar sesion</button>
                 </form><!--fin formulario iniciar sesion-->
+            </div>
                 <!--------------------------------------------------------------------------->
                 <!--formulario registro-->
                 <!--------------------------------------------------------------------------->
-                <form class="formulario__registro"  method="get">
+            <div class="contenedor__registro">
+                <form class="formulario__registro">
                     <h2>Registrarse</h2>
                     <input type="hidden" id="1" name="tipo" value="1">
-                    <input type="text" placeholder="Nombre" name="nombre" required>
-                    <input type="text" placeholder="Apellido" name="apellido" required>
-                    <input type="email" placeholder="Correo electronico" name="email" required>
-                    <input type="text" placeholder="DNI" name="dni" required>
-                    <input type="text" placeholder="Telefono" name="telefono" required>
-                    <input type="password" placeholder="Contraseña" name="clave1" required>
-                    <input type="password" placeholder="Repetir contraseña" name="clave2" required>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" placeholder="Apellido" id="apellido"  name="apellido" required>
+
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" placeholder="Correo electronico" id="correo" name="email" required>
+
+                    <label for="dni">DNI</label>
+                    <input type="text" placeholder="DNI" id="dni" name="dni" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input type="text" placeholder="Telefono" id="telefono" name="telefono" required>
+
+                    <label for="clave1">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" id="clave1" name="clave1" required>
+                    <label for="clave2">Repetir contraseña</label>
+                    <input type="password" placeholder="Repetir contraseña" id="clave2" name="clave2" required>
+                    <input type="reset" value="Limpia formulario">
+
                     <button>Registrarse</button>
                 </form><!--fin formulario registro-->
             </div>
@@ -103,40 +127,6 @@
 
 
     <!---------------footer ----------->
-<script>
-/*    window.onload = function () {
-        var fecha = new Date(); //instanciamos objeto Date carga fecha actual en variable fecha
-        var hora = fecha.getHours(); //carga hora actual en variable hora
-        var minutos = fecha.getMinutes(); //carga minutos actual en variable minutos
-        var segundos = fecha.getSeconds(); //carga segundos actual en variable segundos
-        var mes = fecha.getMonth() + 1; //obtenemos el mes
-        var dia = fecha.getDate(); //obtenemos el dia
-        var ano = fecha.getFullYear(); //obtenemos el año
-        if (dia < 10) //si el dia tiene menos de 10 
-            dia = '0' + dia; //agrega cero si el menor de 10
-        if (mes < 10) //si el mes tiene menos de 10
-            mes = '0' + mes //agrega cero si el menor de 10
-        document.getElementById("dia").innerHTML = dia + "/" + mes + "/" + ano;
-        //mostramos el resultado en el div con id dia
-        document.getElementById("hora").innerHTML = hora + ":" + minutos+ ":" + segundos;
-        //mostramos el resultado en el div con id hora
-    }*/
-</script>
-
-<script>
-    var nav = responsiveNav(".nav-collapse", { //Seleccionamos el elemento que contiene el menu responsive
-        animate: true, //Activamos la animacion
-        transition: 284, //Tiempo de transicion
-        label: "Menu", //Texto del boton
-        insert: "before", //Posicion del boton
-        customToggle: "", //Elemento que contiene el boton
-        openPos: "relative", //Posicion del menu responsive
-        jsClass: "js", //Clase que se le añade al body
-        init: function () {}, //Funcion que se ejecuta al iniciar
-        open: function () {}, //Funcion que se ejecuta al abrir el menu
-        close: function () {} //Funcion que se ejecuta al cerrar el menu
-    });
-</script>
 
     <script src="./js/script.js"></script>
     <script src="./js/funcionesGrupo99.js"></script>
