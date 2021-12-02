@@ -39,117 +39,117 @@
 
 
 <main>
-    <!----------------------------------------------------------------------------------------------------->
-    <!--formulario registro-->
-    <!----------------------------------------------------------------------------------------------------->
-    <form class="formulario__registro" id="form_registro">
-        <h2>Registrarse</h2>
-        <input type="hidden" id="1" name="tipo" value="1">
-        <!--------------------------------------------------------------------------------------->
-        <!------------Primer input pide nombres al usuario -------------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_nombres">
-            <label for="nombres" class="form_label">Nombres</label>
-            <!--etiqueta Nombres-->
-            <div class="form__grupo__input" id="alerta_nombres">
-                <!--div para mostrar alerta-->
-                <input type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres" required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-                <i class="fas fa-check"></i>
-                <!--icono de ok check-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">El nombre no puede tener menos de 3 caracteres</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Segundo input pide apellidos al usuario ----------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_apellidos">
-            <label for="apellidos" class="form_label">Apellidos</label>
-            <!--etiqueta Apellidos-->
-            <div class="form__grupo__input" id="alerta_apellidos">
-                <!--div para mostrar alerta-->
-                <input type="text" class="form__input" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">El apellido no puede tener menos de 2 caracteres</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Tercer input pide dni al usuario ------------------------------------------>
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_dni">
-            <label for="dni" class="form_label">DNI</label>
-            <!--etiqueta DNI-->
-            <div class="form__grupo__input" id="alerta_DNI">
-                <!--div para mostrar alerta-->
-                <input type="text" class="form__input" id="dni" name="dni" placeholder="Documento de identidad"
-                    required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">El DNI es solo numerico ingresele sin puntos ni caracteres</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Cuarto input pide E-mail al usuario --------------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_email">
-            <label for="email" class="form_label">Correo Electronico</label>
-            <!--etiqueta email-->
-            <div class="form__grupo__input" id="alerta_email">
-                <!--div para mostrar alerta-->
-                <input type="email" class="form__input" id="email" name="email" placeholder="lapampa@argentina.com"
-                    required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">La direccion de correo esta erronea</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Quinto input pide clave1 al usuario --------------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_clave1">
-            <label for="clave1" class="form_label">Contraseña</label>
-            <!--etiqueta clave1-->
-            <div class="form__grupo__input" id="alerta_clave1">
-                <!--div para mostrar alerta-->
-                <input type="password" class="form__input" id="clave1" name="clave1" placeholder="contraseña" required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">erronea</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Sexto input pide clave2 al usuario ---------------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo" id="grupo_clave2">
-            <label for="clave2" class="form_label">Repita Contraseña</label>
-            <!--etiqueta clave2-->
-            <div class="form__grupo__input" id="alerta_clave2">
-                <!--div para mostrar alerta-->
-                <input type="password" class="form__input" id="clave2" name="clave2" placeholder="Repita contraseña"
-                    required>
-                <i class="form_validacion_status far fa-times-circle"></i>
-                <!--icono de alerta-->
-            </div><!-- fin div para mostrar alerta-->
-            <p class="form__input-error">erronea</p>
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Septimo input boton de reset del formulario-------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo form__grupo-btn-enviar">
-            <input type="reset" class="form__btn-enviar" value="Limpia formulario">
-        </div>
-        <!--------------------------------------------------------------------------------------->
-        <!------------Octavo boton de reset del formulario--------------------------------------->
-        <!--------------------------------------------------------------------------------------->
-        <div class="form__grupo form__grupo-btn-enviar">
-            <button type="submit" class="form__btn">Enviar</button>
-        </div>
-
-
-
-    </form>
+    <div class="contenedor__registro">
+        <!----------------------------------------------------------------------------------------------------->
+        <!--formulario registro-->
+        <!----------------------------------------------------------------------------------------------------->
+        <form class="formulario__registro" id="form_registro">
+            <input type="hidden" id="1" name="tipo" value="1">
+            <!--------------------------------------------------------------------------------------->
+            <!------------Primer input pide nombres al usuario -------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_nombres">
+                <label for="nombres" class="form__label">Nombres</label>
+                <!--etiqueta Nombres-->
+                <div class="form__grupo__input" id="alerta_nombres">
+                    <!--div para mostrar alerta-->
+                    <input type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres" required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                    <i class="fas fa-check"></i>
+                    <!--icono de ok check-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">El nombre no puede tener menos de 3 caracteres</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Segundo input pide apellidos al usuario ----------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_apellidos">
+                <label for="apellidos" class="form__label">Apellidos</label>
+                <!--etiqueta Apellidos-->
+                <div class="form__grupo__input" id="alerta_apellidos">
+                    <!--div para mostrar alerta-->
+                    <input type="text" class="form__input" id="apellidos" name="apellidos" placeholder="Apellidos"
+                        required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">El apellido no puede tener menos de 2 caracteres</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Tercer input pide dni al usuario ------------------------------------------>
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_dni">
+                <label for="dni" class="form__label">DNI</label>
+                <!--etiqueta DNI-->
+                <div class="form__grupo__input" id="alerta_DNI">
+                    <!--div para mostrar alerta-->
+                    <input type="text" class="form__input" id="dni" name="dni" placeholder="Documento de identidad"
+                        required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">El DNI es solo numerico ingresele sin puntos ni caracteres</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Cuarto input pide E-mail al usuario --------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_email">
+                <label for="email" class="form__label">Correo Electronico</label>
+                <!--etiqueta email-->
+                <div class="form__grupo__input" id="alerta_email">
+                    <!--div para mostrar alerta-->
+                    <input type="email" class="form__input" id="email" name="email" placeholder="lapampa@argentina.com"
+                        required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">La direccion de correo esta erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Quinto input pide clave1 al usuario --------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_clave1">
+                <label for="clave1" class="form__label">Contraseña</label>
+                <!--etiqueta clave1-->
+                <div class="form__grupo__input" id="alerta_clave1">
+                    <!--div para mostrar alerta-->
+                    <input type="password" class="form__input" id="clave1" name="clave1" placeholder="contraseña"
+                        required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Sexto input pide clave2 al usuario ---------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_clave2">
+                <label for="clave2" class="form__label">Repita Contraseña</label>
+                <!--etiqueta clave2-->
+                <div class="form__grupo__input" id="alerta_clave2">
+                    <!--div para mostrar alerta-->
+                    <input type="password" class="form__input" id="clave2" name="clave2" placeholder="Repita contraseña"
+                        required>
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Septimo boton de enviar del formulario------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo form__grupo-btn-enviar">
+                <button type="submit" class="form__btn" id="form__mesaje-exito">Enviar</button>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Octavo input boton de reset del formulario--------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo form__grupo-btn-enviar">
+                <input type="reset" class="form__btn-enviar" value="Limpia formulario">
+            </div>
+        </form>
+    </div><!-- fin div para mostrar formulario-->
 </main>
 <!----------------------------------------------------------------------------------------------------->
 

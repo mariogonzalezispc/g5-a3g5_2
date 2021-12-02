@@ -1,38 +1,57 @@
-*{
-    margin: 0;/*margen en 0*/
-    padding: 0;/*padding en 0*/
-    box-sizing: border-box;/*para que no se vea el borde*/
-    text-decoration: none;/*para que no se vea el texto*/
-    font-family: 'Roboto', sans-serif;/*fuente*/
+* {
+    margin: 0;
+    /*margen en 0*/
+    padding: 0;
+    /*padding en 0*/
+    box-sizing: border-box;
+    /*para que no se vea el borde*/
+    text-decoration: none;
+    /*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;
+    /*fuente*/
 }
 
-body{
+body {
     /*background-image: url(../img/Polinesia.jpg);imagen de fondo*/
-    background-image: url(../img/201-varejo.jpg);/*imagen de fondo*/
-    background-size: cover;/*para que se vea la imagen de fondo*/
-    background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
-    background-attachment: fixed;/*para que se vea la imagen de fondo*/
-    background-position: center;/*para que se vea la imagen de fondo*/
+    background-image: url(../img/201-varejo.jpg);
+    /*imagen de fondo*/
+    background-size: cover;
+    /*para que se vea la imagen de fondo*/
+    background-repeat: no-repeat;
+    /*para que no se repita la imagen de fondo*/
+    background-attachment: fixed;
+    /*para que se vea la imagen de fondo*/
+    background-position: center;
+    /*para que se vea la imagen de fondo*/
 }
 
-main{
-    width: 100%;/*ancho del main*/
-    padding: 00px;/*padding en 0*/
+main {
+    width: 100%;
+    /*ancho del main*/
+    padding: 00px;
+    /*padding en 0*/
     margin: auto;
     margin-top: 100px;
 
 }
-/*--------------------------------------------------------------*/
-.encabezado     /*para el encabezado*/
-    {
-        background: rgba(240, 172, 172, 0.3);/*color de fondo*/
-    }
 
-.encabezado .reloj/*para el reloj*/
+/*--------------------------------------------------------------*/
+.encabezado
+
+/*para el encabezado*/
     {
-        background: rgba(240, 172, 172, 0.3);/*color de fondo*/
-        
-    }    
+    background: rgba(240, 172, 172, 0.3);
+    /*color de fondo*/
+}
+
+.encabezado .reloj
+
+/*para el reloj*/
+    {
+    background: rgba(240, 172, 172, 0.3);
+    /*color de fondo*/
+
+}
 
 
 .encabezado .menu {
@@ -41,157 +60,247 @@ main{
     align-items: center;
 
 }
-    .encabezado .menu ul
-    {
-        list-style: none; /*sacar los puntos de las viñetas*/
-        display: flex;/* deja uno al lado del otro en forma horizontal*/
-        justify-content: space-between;
-    
-    }
-.encabezado .menu ul li ul 
-    {
-        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
-        flex-direction: column;/* deja en forma vertical los sub item*/
-        position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgb(203, 205, 36);
-        display: none; /*hago desaparecer el sub item*/
-    }
-.encabezado .menu ul li:hover > ul 
 
-    { 
-        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
-        flex-direction: column;/* deja en forma vertical los sub item*/
-        position: absolute; /*esto es para sacar los sub menu fuera del header*/
-        background: rgba(245, 143, 10,.3);   
-    }
-.encabezado .menu ul li ul li
-    {
-        width: 480px; /* hacemos crecer el ancho de los sub item*/
-    }
-    a
-    {
-        text-decoration: none; /*Sacar el subrrallado de las etiquetas*/
-        font-size: 20px;
-        color: rgb(203, 205, 36);
-        padding: 12px 20px;
-        display: block; /*es para que no se superpongan los sub item*/
-    }
-    a:hover
-    {
-        color: white;
-    }
-    .now{
-        background: rgba(203, 205, 36,0.2);
-        color: white;
-        justify-content: space-between;
-    
-        border-radius: 3px;
-        padding: 10px;
-    }
+.encabezado .menu ul {
+    list-style: none;
+    /*sacar los puntos de las viñetas*/
+    display: flex;
+    /* deja uno al lado del otro en forma horizontal*/
+    justify-content: space-between;
+
+}
+
+.encabezado .menu ul li ul {
+    display: flex;
+    /* deja uno al lado del otro en forma horizontal los sub menu*/
+    flex-direction: column;
+    /* deja en forma vertical los sub item*/
+    position: absolute;
+    /*esto es para sacar los sub menu fuera del header*/
+    background: rgb(203, 205, 36);
+    display: none;
+    /*hago desaparecer el sub item*/
+}
+
+.encabezado .menu ul li:hover>ul {
+    display: flex;
+    /* deja uno al lado del otro en forma horizontal los sub menu*/
+    flex-direction: column;
+    /* deja en forma vertical los sub item*/
+    position: absolute;
+    /*esto es para sacar los sub menu fuera del header*/
+    background: rgba(245, 143, 10, .3);
+}
+
+.encabezado .menu ul li ul li {
+    width: 480px;
+    /* hacemos crecer el ancho de los sub item*/
+}
+
+a {
+    text-decoration: none;
+    /*Sacar el subrrallado de las etiquetas*/
+    font-size: 20px;
+    color: rgb(203, 205, 36);
+    padding: 12px 20px;
+    display: block;
+    /*es para que no se superpongan los sub item*/
+}
+
+a:hover {
+    color: white;
+}
+
+.now {
+    background: rgba(203, 205, 36, 0.2);
+    color: white;
+    justify-content: space-between;
+
+    border-radius: 3px;
+    padding: 10px;
+}
 
 /*--------------------------------------------------------------*/
-.contenedor__todo{
-    width: 100%;/*ancho del main*/
-    max-width: 800px;/*ancho del main*/
-    margin: auto;/*margen en 0*/
-    position: relative;/*para que se vea el borde*/
-}
-.caja__trasera{
-    width: 100%;/*ancho de la caja trasera*/
-    padding: 10px 20px;/*padding de la caja trasera*/
-    display: flex;/*deja uno al lado del otro en forma horizontal*/
-    border-radius: 5px;/*borde redondeado*/
-    justify-content: center;/*centra el contenido*/
-    /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
-    background-color: rgba(0,128,255,0.5);/*color de fondo caja trasera*/
-}
-.caja__trasera div{/*para centrar el contenido*/
-    margin: 100px 40px;/*margen de la caja trasera*/
-    color: white;/*color de texto*/
-    transition: all 0.5s;/*transicion de tamaño*/
+.contenedor__todo {
+    width: 100%;
+    /*ancho del main*/
+    max-width: 800px;
+    /*ancho del main*/
+    margin: auto;
+    /*margen en 0*/
+    position: relative;
+    /*para que se vea el borde*/
 }
 
-.caja__trasera div p,/*para centrar el contenido*/
-.caja__trasera div button{/*para centrar el contenido*/
-    margin-top: 30px;/*margen de la caja trasera*/
+.caja__trasera {
+    width: 100%;
+    /*ancho de la caja trasera*/
+    padding: 10px 20px;
+    /*padding de la caja trasera*/
+    display: flex;
+    /*deja uno al lado del otro en forma horizontal*/
+    border-radius: 5px;
+    /*borde redondeado*/
+    justify-content: center;
+    /*centra el contenido*/
+    /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
+    background-color: rgba(0, 128, 255, 0.5);
+    /*color de fondo caja trasera*/
 }
-.caja__trasera h3{
-    font-weight: 400;/*para que el texto sea mas liviano*/
-    font-size: 26pxm;/*para que el texto sea mas liviano*/
+
+.caja__trasera div {
+    /*para centrar el contenido*/
+    margin: 100px 40px;
+    /*margen de la caja trasera*/
+    color: white;
+    /*color de texto*/
+    transition: all 0.5s;
+    /*transicion de tamaño*/
 }
-.caja__trasera button{/*para centrar el contenido*/
-    padding: 10px 40px;/*para que el texto sea mas liviano*/
-    border: 2px solid;/*para darle un borde al boton*/
-    background: transparent;/*para que el boton sea transparente*/
-    font-size: 14px; /*para que el texto sea mas liviano*/
-    font-weight: 600;/*para que el texto sea mas liviano*/
-    cursor: pointer;/*para que el cursor sea una mano*/
-    color: white;/*para que el texto sea mas liviano*/
-    outline: none;/*para que el outline no se vea*/
-    transition: all 0.4s;/*transicion de tamaño*/
+
+.caja__trasera div p,
+/*para centrar el contenido*/
+.caja__trasera div button {
+    /*para centrar el contenido*/
+    margin-top: 30px;
+    /*margen de la caja trasera*/
 }
-.caja__trasera button:hover{
-    background:white;/*para que el boton sea blanco al pasar el puntero*/
-    color: #46a2fd;/*para que el texto sea azul al pasar el puntero*/
+
+.caja__trasera h3 {
+    font-weight: 400;
+    /*para que el texto sea mas liviano*/
+    font-size: 26pxm;
+    /*para que el texto sea mas liviano*/
 }
+
+.caja__trasera button {
+    /*para centrar el contenido*/
+    padding: 10px 40px;
+    /*para que el texto sea mas liviano*/
+    border: 2px solid;
+    /*para darle un borde al boton*/
+    background: transparent;
+    /*para que el boton sea transparente*/
+    font-size: 14px;
+    /*para que el texto sea mas liviano*/
+    font-weight: 600;
+    /*para que el texto sea mas liviano*/
+    cursor: pointer;
+    /*para que el cursor sea una mano*/
+    color: white;
+    /*para que el texto sea mas liviano*/
+    outline: none;
+    /*para que el outline no se vea*/
+    transition: all 0.4s;
+    /*transicion de tamaño*/
+}
+
+.caja__trasera button:hover {
+    background: white;
+    /*para que el boton sea blanco al pasar el puntero*/
+    color: #46a2fd;
+    /*para que el texto sea azul al pasar el puntero*/
+}
+
 /*--------------------------------------------------------------*/
 /*Formularios Login*/
 /*--------------------------------------------------------------*/
-.contenedor__login{
-    display: flex;/*deja uno al lado del otro en forma horizontal*/
-    align-items: center;/*centra el contenido*/
-    width: 100%;/*ancho del contenedor*/
+.contenedor__login {
+    display: flex;    /*deja uno al lado del otro en forma horizontal*/
+    align-items: center; /*centra el contenido*/
+    width: 100%; /*ancho del contenedor*/
     max-width: 380px;/*ancho maximo */
     position: relative;
     top: -185px;
     left: 10px;
-    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);/*transicion de tamaño*/
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); /*transicion de tamaño*/
 
 }
-.contenedor__login form{
-    width: 100%;     
+
+.contenedor__login form {
+    width: 100%;
     padding: 80px 20px;
-    background: white;/*cambiar a blanco*/
+    background: white; /*cambiar a blanco*/
     position: absolute;
     border-radius: 20px;
 }
-.contenedor__login form h2{
+
+.contenedor__login form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:  #46a2fd;
+    color: #46a2fd;
 }
-.contenedor__login form input{
+
+.contenedor__login form input {
     width: 100%;
-    margin-top: 20px;/*cambiar a 20px*/
-    padding: 10px;/*cambiar a 10px*/
+    margin-top: 20px;
+    /*cambiar a 20px*/
+    padding: 10px;
+    /*cambiar a 10px*/
     border: none;
     background: #f2f2f2;
     font-size: 16px;
     outline: none;
 }
-.contenedor__login form button{
-  padding: 10px 40px;
-  margin-top: 40px;
-  border: none;
-  font-size: 14px;
-  background: #46a2fd;
-  color: white;
-  cursor: pointer;
-  outline: none;
+
+.contenedor__login form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46a2fd;
+    color: white;
+    cursor: pointer;
+    outline: none;
 }
-.formulario__login{
+
+.formulario__login {
     opacity: 1;
     display: block;
 }
+
 /*------------------------------------------------------*/
 /*Formularios Registro*/
 /*------------------------------------------------------*/
+.contenedor__registro{
+    display: flex;    /*deja uno al lado del otro en forma horizontal*/
+    align-items: center; /*centra el contenido*/
+    width: 100%; /*ancho del contenedor*/
+    max-width: 800px;/*ancho maximo */
+    position: relative;
+    top: 200px;
+    left: 200px;
+    background-color: white;
+}
+
+.contenedor__registro form {
+    width: 100%;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.5); /*cambiar a blanco*/
+    position: absolute;
+    border-radius: 20px;
+}
+
+.formulario__registro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 
 
 
+.form__label {
+    width: 80%;
+    display: block;/*para que se vea el label*/
+    font-weight: 700;/*para que el texto sea mas liviano*/
+    padding: 10px 0;/*para que el texto tenga margen del borde*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+}
 
-
+.formulario__registro h1{
+    grid-column: span;
+}
 
 
 
@@ -199,27 +308,31 @@ main{
 
 /*--------------------------------------------------------------*/
 /*Responsive para el formulario de login*/
-@media screen and (max-width: 850px){
-    main{
+@media screen and (max-width: 850px) {
+    main {
         margin-top: 50px;
     }
-    .caja__trasera{
+
+    .caja__trasera {
         max-width: 350px;
         height: 300px;
         flex-direction: column;
         margin: auto;
     }
-    .caja__trasera div{
+
+    .caja__trasera div {
         margin: 0;
         position: absolute;
     }
+
     /*Formularios*/
-    .contenedor__login{
+    .contenedor__login {
         top: -100px;
         left: -5px;
         margin: auto;
     }
-    .contenedor__login form{
+
+    .contenedor__login form {
         position: relative;
     }
 }
