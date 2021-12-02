@@ -27,15 +27,13 @@ main{
     {
         background: rgba(240, 172, 172, 0.3);/*color de fondo*/
     }
-.encabezado .menu 
-    {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+.encabezado .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
- 
-    }
-.encabezado .menu ul
+}
+    .encabezado .menu ul
     {
         list-style: none; /*sacar los puntos de las viñetas*/
         display: flex;/* deja uno al lado del otro en forma horizontal*/
@@ -73,6 +71,14 @@ main{
     a:hover
     {
         color: white;
+    }
+    .now{
+        background: rgba(203, 205, 36,0.2);
+        color: white;
+        justify-content: space-between;
+    
+        border-radius: 3px;
+        padding: 10px;
     }
 
 /*--------------------------------------------------------------*/

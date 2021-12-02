@@ -12,6 +12,8 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 </script><!-- integra libreria para reloj y fecha-->
+<link rel="stylesheet" href="responsive-nav.css">
+<script src="responsive-nav.js"></script>
 
 
 <body>
@@ -23,9 +25,12 @@
                 <a href="index.html">
                 </a>
             </div>
+            <ul> 
+            <li><a id="dia"class="now"></a></li>
+            <li><a id="hora"class="now"></a></li>
+            </ul>
+
             <ul>
-                <h1 id="dia"></h1>
-                <h1 id="hora"></h1>
                 <li><a href="index.html">Inicio</a></li><!--Referencia de link a index.html-->
                 <li><a href="login.html">Login</a></li><!--Referencia de link a login.html-->
                 <li><a href="producto.html">Productos</a></li><!--Referencia de link a producto.html-->
@@ -117,6 +122,21 @@
         document.getElementById("hora").innerHTML = hora + ":" + minutos+ ":" + segundos;
         //mostramos el resultado en el div con id hora
     }*/
+</script>
+
+<script>
+    var nav = responsiveNav(".nav-collapse", { //Seleccionamos el elemento que contiene el menu responsive
+        animate: true, //Activamos la animacion
+        transition: 284, //Tiempo de transicion
+        label: "Menu", //Texto del boton
+        insert: "before", //Posicion del boton
+        customToggle: "", //Elemento que contiene el boton
+        openPos: "relative", //Posicion del menu responsive
+        jsClass: "js", //Clase que se le añade al body
+        init: function () {}, //Funcion que se ejecuta al iniciar
+        open: function () {}, //Funcion que se ejecuta al abrir el menu
+        close: function () {} //Funcion que se ejecuta al cerrar el menu
+    });
 </script>
 
     <script src="./js/script.js"></script>
