@@ -1,5 +1,12 @@
 <?php   
 
+    //Formulario 1 - Carga registro cliente
+    //Formulario 2 - consulta de login
+    //Formulario 3 - carga producto
+    //Formulario 4 - carga registro factura
+
+
+
     //include 'conexion_be.php';//conexion a base de datos
 
     $tipo_form=$_POST['tipo'];//variable que recibe el tipo de formulario que se va a cargar
@@ -26,16 +33,16 @@
     }
 
 //---------------------------------------------------------------------------------
-    if ($tipo_form=="2") {//formulario registro producto nuevo
+    if ($tipo_form=="3") {//formulario registro producto nuevo
 
-    echo "formulario registro producto nuevo TIPO = 2";
+    echo "formulario registro producto nuevo TIPO = 3";
 
     }
 
 //---------------------------------------------------------------------------------
-    if ($tipo_form=="3") {//formulario registro factura nuevo
+    if ($tipo_form=="4") {//formulario registro factura nuevo
 
-    echo "formulario registro factura nuevo  TIPO = 3";
+    echo "formulario registro factura nuevo  TIPO = 4";
 
     }
 
