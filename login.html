@@ -24,6 +24,7 @@
     <nav class="menu">
         <div class="reloj">
             <ul> 
+                <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
                 <li><a id="dia"class="now"></a></li>
                 <li><a id="hora"class="now"></a></li>
                 </ul>
@@ -31,9 +32,9 @@
         <ul>
             <li><a  href="index.html">Inicio</a></li>
             <li><a  href="producto.html">Productos</a></li> 
-            <li><a  href="contacto.html">Contacto</a></li>
             <li><a  href="login.html" >Login</a></li> 
             <li><a  href="registro.html" >Registro</a></li>              
+            <li><a  href="contacto.html">Contacto</a></li>
             <li><a  href="acerca.html">Acerca de</a></li>
         </ul>
     </nav>
@@ -51,20 +52,26 @@
 
 
     <!--------------------------------------------------------------------------------------->
-    <main><!--Contenido principal-->
-        <div class="contenedor__todo"><!--Contenedor de todo el contenido-->
+    <main>
+        <!--Contenido principal-->
+        <div class="contenedor__todo">
+            <!--Contenedor de todo el contenido-->
             <div class="caja__trasera">
                 <!--------------------------------------------------------------------------->
-                <div class="caja__trasera_login"><!--esta clase esta en estilos.css-->
-                    <h3>¿Ya tiene cuenta?</h3><!--Titulo caja trasera donde flota formulario login-->
-                    <p>Inicia sesion para entrat en la pagina</p><!--Texto caja trasera donde flota formulario-->
-                    <button id="btn__iniciar-sesion">Iniciar sesion</button><!--Boton caja trasera donde flota formulario-->
+                <div class="caja__trasera_login">
+                    <!--esta clase esta en estilos.css-->
+                    <h3>¿Ya tiene cuenta?</h3>
+                    <!--Titulo caja trasera donde flota formulario login-->
+                    <p>Inicia sesion para entrat en la pagina</p>
+                    <!--Texto caja trasera donde flota formulario-->
+                    <button id="btn__iniciar-sesion">Iniciar sesion</button>
+                    <!--Boton caja trasera donde flota formulario-->
                 </div>
                 <!--------------------------------------------------------------------------->
                 <div class="caja__trasera_registro">
                     <h3>¿Aun no tiene una cuenta?</h3>
                     <p>Registrate para que puedas iniciar sesion</p>
-                    <button id="btn__registrarse">Registrarse</button>
+                    <button id="btn__registrarse" onclick="location.href='registro.html'">Registrarse</button>
                 </div>
                 <!--------------------------------------------------------------------------->
             </div>
@@ -73,49 +80,21 @@
             <!--formulario iniciar sesion-->
             <!--------------------------------------------------------------------------->
             <div class="contenedor__login">
-                <form action="" class="formulario__login"><!--formulario iniciar sesion-->
-                    <h2>Iniciar sesion</h2><!--Titulo formulario iniciar sesion-->
+                <form action="" class="formulario__login">
+                    <!--formulario iniciar sesion-->
+                    <h2>Iniciar sesion</h2>
+                    <!--Titulo formulario iniciar sesion-->
                     <input type="hidden" id="2" name="tipo" value="2">
                     <input type="text" placeholder="Correo electronico" required>
                     <input type="password" placeholder="Contraseña" required>
                     <button>Iniciar sesion</button>
-                </form><!--fin formulario iniciar sesion-->
-            </div>
-                <!--------------------------------------------------------------------------->
-                <!--formulario registro-->
-                <!--------------------------------------------------------------------------->
-            <div class="contenedor__registro">
-                <form class="formulario__registro">
-                    <h2>Registrarse</h2>
-                    <input type="hidden" id="1" name="tipo" value="1">
-
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
-
-                    <label for="apellido">Apellido</label>
-                    <input type="text" placeholder="Apellido" id="apellido"  name="apellido" required>
-
-                    <label for="correo">Correo electronico</label>
-                    <input type="email" placeholder="Correo electronico" id="correo" name="email" required>
-
-                    <label for="dni">DNI</label>
-                    <input type="text" placeholder="DNI" id="dni" name="dni" required>
-
-                    <label for="telefono">Telefono</label>
-                    <input type="text" placeholder="Telefono" id="telefono" name="telefono" required>
-
-                    <label for="clave1">Contraseña</label>
-                    <input type="password" placeholder="Contraseña" id="clave1" name="clave1" required>
-                    <label for="clave2">Repetir contraseña</label>
-                    <input type="password" placeholder="Repetir contraseña" id="clave2" name="clave2" required>
-                    <input type="reset" value="Limpia formulario">
-
-                    <button>Registrarse</button>
-                </form><!--fin formulario registro-->
+                </form>
+                <!--fin formulario iniciar sesion-->
             </div>
             <!--------------------------------------------------------------------------->
         </div>
-    </main><!--Fin de contenido principal-->
+    </main>
+    <!--Fin de contenido principal-->
     <!--------------------------------------------------------------------------->
 
 
