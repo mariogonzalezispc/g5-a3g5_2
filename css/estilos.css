@@ -241,12 +241,14 @@ a:hover {
     top: 200px;
     left: 200px;
     background-color: white;
+
 }
 
 .contenedor__registro form {
     width: 75%;/*ancho del contenedor*/
     padding: 70px 20px;/*Margenes de altura y laterales del formulario interiores*/
-    background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
+    /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
+    background-color: rgba(0, 128, 255, 0.5);
     top: 50%;/*centra el contenido*/
     left: 50%;/*centra el contenido*/
     position: absolute;
@@ -266,7 +268,7 @@ a:hover {
     padding: 10px;/*para que el texto tenga margen del borde*/
     cursor: pointer;/*para que el cursor sea una mano*/
     font-size: 20px;/*para que el texto sea mas liviano*/
-    color: #46a2fd;
+    color: black;/*para que el texto sea mas liviano*/
 }
 .form__grupo__input{
     position: relative;/*posiciona el campo delinput*/
@@ -356,7 +358,7 @@ a:hover {
     display: block;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 .form__btn-reset:hover{
