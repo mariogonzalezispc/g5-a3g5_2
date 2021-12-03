@@ -40,17 +40,11 @@ main {
 
 /*para el encabezado*/
     {
-    background: rgba(240, 172, 172, 0.3);
-    /*color de fondo*/
+    background: rgba(240, 172, 172, 0.3);/*color de fondo*/
 }
 
-.encabezado .reloj
-
-/*para el reloj*/
-    {
-    background: rgba(240, 172, 172, 0.3);
-    /*color de fondo*/
-
+.encabezado .reloj{/*para el reloj*/
+    background: rgba(240, 172, 172, 0.0);/*color de fondo*/
 }
 
 
@@ -83,12 +77,9 @@ main {
 }
 
 .encabezado .menu ul li:hover>ul {
-    display: flex;
-    /* deja uno al lado del otro en forma horizontal los sub menu*/
-    flex-direction: column;
-    /* deja en forma vertical los sub item*/
-    position: absolute;
-    /*esto es para sacar los sub menu fuera del header*/
+    display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+    flex-direction: column;/* deja en forma vertical los sub item*/
+    position: absolute;/*esto es para sacar los sub menu fuera del header*/
     background: rgba(245, 143, 10, .3);
 }
 
@@ -112,7 +103,7 @@ a:hover {
 }
 
 .now {
-    background: rgba(203, 205, 36, 0.2);
+    background: rgba(240, 172, 172, 0.0);
     color: white;
     justify-content: space-between;
 
@@ -277,7 +268,7 @@ a:hover {
 .contenedor__registro form {
     width: 75%;/*ancho del contenedor*/
     padding: 70px 20px;/*Margenes de altura y laterales del formulario interiores*/
-    background: rgba(250, 128, 114,0.3); /*cambiar a blanco*/
+    background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     top: 50%;/*centra el contenido*/
     left: 50%;/*centra el contenido*/
     position: absolute;
