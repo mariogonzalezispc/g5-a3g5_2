@@ -3,16 +3,16 @@
 document.getElementById("btn__iniciar-sesion").addEventListener("click",iniciarSesion);
 
 //funcion para validar el formulario de registro
-//document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
+document.getElementById("btn__registrarse").addEventListener("click",registrarse_1);
 
 //funcion para validar el formulario de registro
 window.addEventListener("resize",anchoPagina);
 
-var contenedor_login_registro=document.querySelector(".contenedor__login-registro");//funcion para validar el formulario de registro
-var formulario_login=document.querySelector(".formulario__login");//variable para cargar la calse formulario__login
-var formulario_registro=document.querySelector(".formulario__registro");//funcion para validar el formulario de registro
-var caja_trasera_login=document.querySelector(".caja__trasera_login");//funcion para validar el formulario de login 
-var caja_trasera_registro=document.querySelector(".caja__trasera_registro");//funcion para validar el formulario de registro
+var contenedor_login_registro=document.querySelector(".contenedor__login-registro");
+var formulario_login=document.querySelector(".formulario__login");
+var formulario_registro=document.querySelector(".formulario__registro");
+var caja_trasera_login=document.querySelector(".caja__trasera_login"); 
+var caja_trasera_registro=document.querySelector(".caja__trasera_registro");
 
 //----------------------------------------------------------------------------------------------------------------------
 function anchoPagina(){//funcion para modificar el codigo html 
@@ -32,7 +32,7 @@ function anchoPagina(){//funcion para modificar el codigo html
 anchoPagina();//funcion para ajustar el formulario de registro
 //----------------------------------------------------------------------------------------------------------------------
 function iniciarSesion(){//funcion para validar el formulario de registro
-if (window.innerWidth>850){//
+if (window.innerWidth>850){
     formulario_registro.style.display="none";//oculta el formulario de registro
     contenedor_login_registro.style.left="10px";//mueve el contenedor a la izquierda
     formulario_login.style.display="block";//muestra el formulario de login
