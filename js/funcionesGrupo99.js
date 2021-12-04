@@ -14,9 +14,7 @@ mes = fecha.getMonth()+1;//obtengo mes actual
 anio = fecha.getFullYear();//obtengo año actual
 
 if (hora < 10) hora = 0 + hora;//si hora es menor a 10 le agrego un 0 al inicio
-
 if (minutos < 10) minutos = "0" + minutos;//si minutos es menor a 10 le agrego un 0 al inicio
-
 if (segundos < 10) segundos = "0" + segundos;//si segundos es menor a 10 le agrego un 0 al inicio
 
 $("#hora").text(hora+ ":" +minutos+ ":" +segundos);//muestro hora actual en el h1 id hora
@@ -28,10 +26,11 @@ setTimeout("showTime()", 1000);//llamo a la funcion showTime cada segundo para s
 //segunda funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
 //-----------------------------------------------------------------------------------
 function mi_Menu(){
-    const navToggle = document.querySelector(".nav-toggle");
-    const navMenu = document.querySelector(".nav-menu");
+    const navToggle = document.querySelector(".nav-toggle");//obtengo el elemento nav-toggle
+    const navMenu = document.querySelector(".nav-menu");//obtengo el elemento nav-menu
 
     navMenu.classList.toggle("nav-menu__visible");
+    //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
 
   }
 
@@ -41,5 +40,5 @@ function mi_Menu(){
 
 
 //-----------------------------------------------------------------------------------
-//envio por metodo get a otro formulario
+//Envio por metodo get a otro formulario cointacto a otro formulario
 //-----------------------------------------------------------------------------------
