@@ -144,7 +144,7 @@ text-decoration: none;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
-        right: -400px;
+        right: -500px;
         transition: 0.8s;
     }
     .nav-menu-item{
