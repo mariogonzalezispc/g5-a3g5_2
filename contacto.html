@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="./css/estilocontacto.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
 </head>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -36,35 +36,53 @@
 </header>
 <!--------------------------------------------------------------------------------------->
     <main>
-        <!--------------------------------------------------------------------------->
-        <!--formulario iniciar sesion-->
-        <!--------------------------------------------------------------------------->
-        <form action="" class="form">
-            <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>
-            <label>Ingrese su nombre</label>
-            <input type="text" placeholder="Su nombre" required>
-            <label>Ingrese su correo electronico</label>
-            <input type="email" placeholder="Su correo electronico" required>
-            <label>Ingrese su telefono</label>
-            <input type="tel" placeholder="Su telefono">
-            <label>Ingrese su mensaje</label>
-            <textarea name="mensaje" rows="10" cols="50" required></textarea>
-            <input type="submit" name="Enviar">
-            <input type="reset" name="Limpiar Formulario">
-        </form>
+
+        <h1>Hola soy Monica</h1>
+        <div class="contenedor__contacto">
+            <!--------------------------------------------------------------------------->
+            <!--formulario contacto -->
+            <!--------------------------------------------------------------------------->
+            <form action="" class="form__contacto">
+                <!--   <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>-->
+
+                <div>
+                    <label for="nombres" class="form__label">Ingrese su nombre</label>
+                    <input type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres" required>
+                </div>
+
+                <div>
+                    <label for="email" class="form__label">Ingrese su correo </label>
+                    <input type="email" class="form__input" placeholder="Su correo electronico" id="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono" class="form__label">Ingrese su telefono</label>
+                    <input type="tel" class="form__input" placeholder="Su telefono" id="telefono">
+                </div>
+
+                <div>
+                    <label for="mensaje" class="form__label">Ingrese su mensaje</label>
+                    <textarea class="textarea_1"  name="mensaje" rows="10" cols="50" id="mensaje" required></textarea>
+                </div>
+
+                <div class="form__grupo form__grupo-btn-enviar">
+                    <input type="reset" class="button_vs" name="Limpiar Formulario">
+                </div>
+
+                <div class="form__grupo form__grupo-btn-enviar">
+                    <input type="submit" class="button_vs" name="Enviar">
+                </div>
+
+            </form>
+        </div>
         <!--------------------------------------------------------------------------->
     </main>
 
     <!---------------footer ----------->
-    <footer>
-        <div class="encabezado" width="100%">
-          <p><a href="terminosycondiciones.html" target="_parent">Terminos y Condiciones</a></p>
-        </div>
-  </footer>
+
     <!---------------footer ----------->
 
     <script src="./js/script.js"></script>
     <script src="./js/funcionesGrupo99.js"></script>
 </body>
-
 </html>
