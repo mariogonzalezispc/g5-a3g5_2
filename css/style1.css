@@ -57,13 +57,14 @@ text-decoration: none;
     background-color: #034574;
     transition: 0.5s;
 }
-.nav-hide_2 {
+.nav-toggle{ 
     color: white;
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     padding: 0 20px;
     line-height: 60px;
+    cursor: pointer;
     display: none;
 }
 
@@ -82,7 +83,10 @@ text-decoration: none;
 
 
 
+.nav-menu__visible{
+    right: 200px;
 
+}
 
 
 
@@ -92,7 +96,6 @@ text-decoration: none;
 
 
 @media screen and (max-width: 768px) {
-
     .nav-menu{
         flex-direction: column;
         margin-right: 10px;
@@ -104,24 +107,32 @@ text-decoration: none;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
+        right: 10px;
+        transition: 1s;
+    
     }
+    .nav-menu__visible{
+        right: 200px;
+    
+    }
+    
+
     .nav-menu-item{
         font-size: 14px;
         line-height: 60px;
       
     }
-    .nav-menu-link:hover {
+    .nav-menu-link:hover{
         background-color: none;
         transition: 0.5s;
         color: aqua;
     }
 
-
-    .nav-hide_2 {
+    .nav-toggle {
         display: block;
         color: black;
     }
- 
+
     .web{
         display: none;
     }
@@ -131,37 +142,3 @@ text-decoration: none;
         margin-left: 120px;
     }
 }
-    
-@media screen and (max-width: 576px) {
-.header{
-    height: 60px;
-}
-    .logo__img{
-        width: 40px;
-        height: 40px;
-        margin-bottom: 0px;
-        position: absolute;
-        top: 10px;
-      }
-
-    .nav-menu-item {
-        display: none;
-    }
-    .nav-menu-link {
-        display: none;
-    }
-    .web{
-        display: none;
-    }
-    .mov {
-        font-size: 15px;/*tamaño de letra*/
-        display: block;
-        position: absolute;
-        margin-left: 70px;
-        line-height: 60px;
-        
-
-    }
-}
-
-

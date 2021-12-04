@@ -26,3 +26,12 @@ setTimeout("showTime()", 1000);//llamo a la funcion showTime cada segundo para s
 
 //-----------------------------------------------------------------------------------
 
+//-----------------------------------------------------------------------------------
+//segunda funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
+//-----------------------------------------------------------------------------------
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelectorAll(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu__visible");
+});
