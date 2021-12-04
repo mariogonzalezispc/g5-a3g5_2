@@ -25,4 +25,21 @@ setTimeout("showTime()", 1000);//llamo a la funcion showTime cada segundo para s
 }
 
 //-----------------------------------------------------------------------------------
+//segunda funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
+//-----------------------------------------------------------------------------------
+function mi_Menu(){
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
 
+    navMenu.classList.toggle("nav-menu__visible");
+
+  }
+
+//-----------------------------------------------------------------------------------
+//Validacion de la edad del usuario
+//-----------------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------------
+//envio por metodo get a otro formulario
+//-----------------------------------------------------------------------------------
