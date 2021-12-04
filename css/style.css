@@ -31,23 +31,18 @@ nav ul{
     background: aquamarine;
     text-align: center;
     display: inline-block;
- 
-
-}
+ }
     nav ul li{
     display: inline-block;
     margin: 20px;
     transition: all ease-in-out 250ms;
- 
-}
+ }
 /*-------------------------------------------------------------------------------*/
 ul li a{
     color: grey;
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
-
-
  }
 nav ul li:hover{
     background:black;
@@ -91,5 +86,5 @@ nav ul li:hover{
         font-size: 25px;
 
     }
-
 }
+/*-----------------------------------------------------------------------------------------*/
