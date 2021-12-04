@@ -34,9 +34,10 @@ main {
     margin-top: 100px;/*espacio entre el main y top*/
 
 }
+
 footer {
     width: 100%;
-    background: #46a2fd;
+    background: rgba(0, 128, 255, 0.5);
     color: white;
     margin-left: 0px;
     text-align: left;
@@ -44,6 +45,7 @@ footer {
     cursor: pointer;
     width: 100%;
     bottom: 0; /*aqui lo enviamos al fondo*/
+    margin-bottom: 0px;
 }
 
 
@@ -496,7 +498,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    margin-top: 0px;
+    margin-top: 300px;
 
 }
 
@@ -546,7 +548,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 
 .box__copyright hr {
