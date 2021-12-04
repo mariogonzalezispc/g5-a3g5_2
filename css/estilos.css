@@ -27,12 +27,11 @@ body {
 }
 
 main {
-    width: 100%;
-    /*ancho del main*/
-    padding: 250px;
+    width: 100%;/*ancho del main*/
+    padding: 100px;/*espacio entre el main y el contenido*/
     /*padding en 0*/
-    margin: auto;
-    margin-top: 100px;
+    margin: auto;/*para que el main se vea centrado*/
+    margin-top: 100px;/*espacio entre el main y top*/
 
 }
 footer {
@@ -51,14 +50,10 @@ footer {
 
 /*--------------------------------------------------------------*/
 .contenedor__todo {
-    width: 100%;
-    /*ancho del main*/
-    max-width: 800px;
-    /*ancho del main*/
-    margin: auto;
-    /*margen en 0*/
-    position: relative;
-    /*para que se vea el borde*/
+    width: 100%;/*ancho del main*/
+    max-width: 1000px;/*ancho del main*/
+    margin: auto;/*margen en 0*/
+    position: relative;/*para que se vea el borde*/
 }
 
 .caja__trasera {
@@ -494,12 +489,7 @@ footer {
 /*------------------------------------------------------*/
 /* footer estilos*/
 /*------------------------------------------------------*/
-footer {
-    width: 100%;
-    padding: 5px 0px;
-    background: #46a2fd;
 
-}
 
 .tipo__footer {
     display: flex;
