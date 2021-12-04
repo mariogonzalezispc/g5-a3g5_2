@@ -70,15 +70,6 @@ text-decoration: none;
 
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
     .nav-menu{
         flex-direction: column;
@@ -91,25 +82,17 @@ text-decoration: none;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
-        right: 10px;
+        right: 0px;
         transition: 1s;
-    
     }
-
     .nav-menu-item{
         font-size: 14px;
         line-height: 60px;
-      
     }
     .nav-menu-link:hover{
         background-color: none;
         transition: 0.5s;
         color: aqua;
-    }
-
-    .nav-toggle {
-        display: block;
-        color: black;
     }
 
     .web{
@@ -120,8 +103,12 @@ text-decoration: none;
         position: absolute;
         margin-left: 120px;
     }
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
     .nav-menu__visible{
         right: 200px;
-    
+        color: green;
     }
 }
