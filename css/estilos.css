@@ -329,7 +329,7 @@ textarea{
     opacity: 0;
     /*opacidad del icono de validacion*/
 
-
+}
 textarea{/*para que se vea el textarea*/
     resize: vertical;/*para que se vea vertical el textarea*/
     max-height: 200px;/*Maxima altura del textarea*/
@@ -562,9 +562,10 @@ textarea{/*para que se vea el textarea*/
 /*--------------------------------------------------------------*/
 /*Responsive para el formulario de login*/
 /*--------------------------------------------------------------*/
-/*@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     main {
         margin-top: 50px;
+
     }
 
     .caja__trasera {
@@ -591,7 +592,7 @@ textarea{/*para que se vea el textarea*/
     }
 
 }*/
-
+}
 
 /*------------------------------------------------------*/
 /* footer estilos*/
