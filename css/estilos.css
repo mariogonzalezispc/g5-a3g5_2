@@ -458,10 +458,10 @@ footer {
 /*--------------------------------------------------------------*/
 /*Responsive para el formulario de login*/
 /*--------------------------------------------------------------*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     main {
         margin-top: 50px;
-        
+
     }
 
     .caja__trasera {
