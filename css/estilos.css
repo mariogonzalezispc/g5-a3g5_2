@@ -434,8 +434,7 @@ main {
     left: 50%;
     /*centra el contenido*/
     position: absolute;
-    transform: translate(-50%, -50%);
-    /*centra el contenido*/
+    transform: translate(-50%, -50%);/*centra el contenido*/
     box-sizing: border-box;
     /*para que no se vea el borde*/
     border-radius: 20px;
@@ -453,6 +452,7 @@ main {
 
 /*--------------------------------------------------------------*/
 /*Responsive para el formulario de login*/
+/*--------------------------------------------------------------*/
 @media screen and (max-width: 850px) {
     main {
         margin-top: 50px;
