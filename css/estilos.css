@@ -329,7 +329,7 @@ textarea{
     opacity: 0;
     /*opacidad del icono de validacion*/
 
-
+}
 textarea{/*para que se vea el textarea*/
     resize: vertical;/*para que se vea vertical el textarea*/
     max-height: 200px;/*Maxima altura del textarea*/
@@ -592,7 +592,7 @@ textarea{/*para que se vea el textarea*/
     }
 
 }*/
-
+}
 
 /*------------------------------------------------------*/
 /* footer estilos*/
