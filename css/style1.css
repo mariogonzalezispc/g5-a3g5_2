@@ -93,16 +93,35 @@ text-decoration: none;
 
 @media screen and (max-width: 768px) {
 
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 40%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+      
+    }
+    .nav-menu-link:hover {
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+
 
     .nav-hide_2 {
         display: block;
+        color: black;
     }
-    .nav-menu-item {
-        display: none;
-    }
-    .nav-menu-link {
-        display: none;
-    }
+ 
     .web{
         display: none;
     }
@@ -144,6 +163,5 @@ text-decoration: none;
 
     }
 }
-    
-}    
+
 
