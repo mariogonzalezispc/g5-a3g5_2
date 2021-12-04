@@ -33,5 +33,5 @@ const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelectorAll(".nav-menu");
 
 navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu__visible");
+  navToggle.classList.toggle("nav-menu__visible");
 });

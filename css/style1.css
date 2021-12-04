@@ -79,22 +79,6 @@ text-decoration: none;
 
 
 
-
-
-
-
-.nav-menu__visible{
-    right: 200px;
-
-}
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
     .nav-menu{
         flex-direction: column;
@@ -111,11 +95,6 @@ text-decoration: none;
         transition: 1s;
     
     }
-    .nav-menu__visible{
-        right: 200px;
-    
-    }
-    
 
     .nav-menu-item{
         font-size: 14px;
@@ -140,5 +119,9 @@ text-decoration: none;
         display: block;
         position: absolute;
         margin-left: 120px;
+    }
+    .nav-menu__visible{
+        right: 200px;
+    
     }
 }
