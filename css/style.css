@@ -5,6 +5,7 @@ header{
     color: #fff;
     text-align: center;
     background: black;
+    position: fixed;
 
 }
 header img{ 
@@ -49,6 +50,7 @@ nav ul li:hover{
 
 }
 .hide{
+    display: none;
     font-size: 22px;
     padding: 16px;
     background-color: orange;
