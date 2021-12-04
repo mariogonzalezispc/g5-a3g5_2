@@ -123,6 +123,13 @@ text-decoration: none;
         margin-left: 20px;
         line-height: 60px;
       }
+      .mov {
+          font-size: 16px;
+        display: block;
+        line-height: 60px;
+        margin-left: 0px;
+        position: relative;
+    }
     .nav-menu{
         flex-direction: column;
         margin-right: 10px;
