@@ -77,12 +77,12 @@ text-decoration: none;
         background-color: #034574;
         position: fixed;
         right: 0;
-        top: 60px;
+        top: 90px;
         width: 40%;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
-        right: 0px;
+        right: -400px;
         transition: 1s;
     }
     .nav-menu-item{
@@ -108,7 +108,7 @@ text-decoration: none;
         color: white;
     }
     .nav-menu__visible{
-        right: 200px;
-        color: green;
+        right: -10px;
+
     }
 }
