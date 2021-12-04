@@ -23,6 +23,7 @@ body {
     /*para que se vea la imagen de fondo*/
     background-position: center;
     /*para que se vea la imagen de fondo centrada*/
+    padding: 50px 20px 0px;
 }
 
 main {
