@@ -23,21 +23,29 @@ body {
     /*para que se vea la imagen de fondo*/
     background-position: center;
     /*para que se vea la imagen de fondo centrada*/
-    padding: 50px 20px 0px;
+    padding: 0px 0px 0px;
 }
 
 main {
     width: 100%;
     /*ancho del main*/
-    padding: 0px;
+    padding: 250px;
     /*padding en 0*/
     margin: auto;
     margin-top: 100px;
 
 }
-
-
-
+footer {
+    width: 100%;
+    background: #46a2fd;
+    color: white;
+    margin-left: 0px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    bottom: 0; /*aqui lo enviamos al fondo*/
+}
 
 
 
