@@ -132,6 +132,7 @@ footer {
 .contenedor__login form input {
     width: 100%;
     margin-top: 20px;/*cambiar a 20px*/
+    margin-bottom: 20px;/*cambiar a 20px*/
     padding: 10px;/*cambiar a 10px*/
     border: none;/*para que no se vea el borde*/
     background: #f2f2f2;/*color de fondo*/
@@ -601,7 +602,7 @@ textarea{/*para que se vea el textarea*/
     .contenedor__contacto form {
         width: 80%;/*ancho del contenedor*/
         top: 400px;/*centra el contenido*/
-        min-width: 290px;/*ancho minimo*/
+        min-width: 340px;/*ancho minimo*/
     }
 
 
