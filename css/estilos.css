@@ -588,7 +588,7 @@ textarea{/*para que se vea el textarea*/
         box-sizing: border-box;/*para que no se vea el borde*/
         border-radius: 20px; /*borde redondeado*/
 
-        width: 80%;/*ancho del contenedor*/
+        width: 90%;/*ancho del contenedor*/
         top: 500px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
@@ -600,7 +600,7 @@ textarea{/*para que se vea el textarea*/
         /*display: column;*/
     }
     .contenedor__contacto form {
-        width: 85%;/*ancho del contenedor*/
+        width: 90%;/*ancho del contenedor*/
         top: 400px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
