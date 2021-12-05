@@ -561,7 +561,7 @@ textarea{/*para que se vea el textarea*/
     }
     .contenedor__login form button {
         color: rgba(255, 255, 255, 1);/*para que el texto sea mas liviano*/
-        margin-top: 40px;
+        margin-top: 0px;
         margin-left: 55px;
     }
     /*------------------------------------------------------*/
