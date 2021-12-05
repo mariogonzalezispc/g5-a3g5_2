@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion Deposito (ISPCA3G5) Login</title>
+    <title>Gestion Deposito (ISPCA3G5) Contacto</title>
     <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/style1.css">
@@ -37,65 +37,45 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
     </nav>
     </header>
 <!--------------------------------------------------------------------------------------->
+<main>
+    <div class="contenedor__contacto">
+        <!--------------------------------------------------------------------------->
+        <!--formulario contacto -->
+        <!--------------------------------------------------------------------------->
+        <form action="" class="form__contacto">
+            <!--   <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>-->
 
-
-
-
-
-
-
-
-
-
-
-    <!--------------------------------------------------------------------------------------->
-    <main>
-        <!--Contenido principal-->
-        <div class="contenedor__todo">
-            <!--Contenedor de todo el contenido-->
-            <div class="caja__trasera">
-                <!--------------------------------------------------------------------------->
-                <div class="caja__trasera_login">
-                    <!--esta clase esta en estilos.css-->
-                    <button id="btn__iniciar-sesion"></button>
-                </div>
-                <!--------------------------------------------------------------------------->
-                <div class="caja__trasera_registro">
-                    <h3>¿Aun no tiene una cuenta?</h3>
-                    <p>Registrate para que puedas iniciar sesion</p>
-                    <button id="btn__registrarse" onclick="location.href='registro.html'">Registrarse</button>
-                </div>
-                <!--------------------------------------------------------------------------->
+            <div>
+                <label for="nombres" class="form__label">Nombre ingresado</label>
+                <input type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres" required>
             </div>
 
-            <!--------------------------------------------------------------------------->
-            <!--formulario iniciar sesion-->
-            <!--------------------------------------------------------------------------->
-            <div class="contenedor__login">
-                <form action="" class="formulario__login">
-                    <!--formulario iniciar sesion-->
-                    <h2>Iniciar sesion</h2>
-                    <!--Titulo formulario iniciar sesion-->
-                    <input type="hidden" id="2" name="tipo" value="2">
-                    <input type="text" placeholder="Correo electronico" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <button class="button_vs">Iniciar sesion</button>
-                </form>
-                <!--fin formulario iniciar sesion-->
+            <div>
+                <label for="email" class="form__label">Correo ingresado</label>
+                <input type="email" class="form__input" placeholder="Su correo electronico" id="email" required>
             </div>
-            <!--------------------------------------------------------------------------->
-        </div>
-    </main>
-    <!--Fin de contenido principal-->
+
+            <div>
+                <label for="telefono" class="form__label">Telefono ingresado</label>
+                <input type="tel" class="form__input" placeholder="Su telefono (opcional)" id="telefono">
+            </div>
+
+            <div>
+                <label for="mensaje" class="form__label">Su mensaje</label>
+                <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje" required></textarea>
+            </div>
+
+            <div class="fom_contacto__aviso">
+                <h2>Gracias nos contactaremos a la brevedad.</h2>
+            </div>
+
+        </form>
+    </div>
     <!--------------------------------------------------------------------------->
-
-
-
+</main>
 
     <!---------------footer ----------->
 
-
-    
     <!---------------footer ----------->
 
     <script src="./js/script.js"></script>

@@ -92,11 +92,13 @@ footer {
     border: 2px solid;/*para darle un borde al boton*/
     background: transparent;/*para que el boton sea transparente*/
     font-size: 14px;/*tamaño del texto */
-    font-weight: 600;/*para que el texto sea mas liviano*/
+    font-weight: 600;/*para que el texto sea caso bold*/
     cursor: pointer;/*para que el cursor sea una mano*/
     color: white;/*para que el texto sea mas liviano*/
     outline: none;/*para que el outline no se vea*/
     transition: all 0.4s;/*transicion de tamaño*/
+
+
 }
 .caja__trasera button:hover,
 .button_vs:hover {
@@ -136,15 +138,36 @@ footer {
     font-size: 16px;/*tamaño del texto*/
     outline: none;/*para que el borde generado por el navegador no se vea*/
 }
+
 .contenedor__login form button {
+
+
+    padding: 10px 40px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 14px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    margin-top: 40px;
+    margin-left: 55px;
+
+
+
+
+
+/*
     padding: 10px 40px;
     margin-top: 40px;
+    margin-left: 55px;
     border: none;
     font-size: 14px;
     background: #46a2fd;
     color: white;
     cursor: pointer;
-    outline: none;
+    outline: none;*/
 }
 .formulario__login {
     opacity: 1;/*para que se vea el formulario*/
@@ -194,31 +217,20 @@ footer {
     position: relative;/*posiciona el campo delinput*/
 }
 .form__input {
-    width: 100%;
-    /*ancho del input es completo de la columna*/
+    width: 100%;    /*ancho del input es completo de la columna*/
     background: gainsboro;
-    border: 3px solid transparent;
-    /*borde del input es de 3px pero ahora solo tranaparente */
-    border-radius: 3px;
-    /*borde redondeado*/
-    height: 45px;
-    /*altura del input*/
-    line-height: 45px;
-    /*Texto de altura de 45px*/
-    padding: 0 40px 0 10px;
-    /*margenes del input*/
-    transition: .3s ease all;
-    /*transicion de tamaño*/
-    font-size: 15px;
-    /*para que el texto sea mas liviano*/
+    border: 3px solid transparent;/*borde del input es de 3px pero ahora solo tranaparente */
+    border-radius: 3px;/*borde redondeado*/
+    height: 45px;/*altura del input*/
+    line-height: 45px;/*Texto de altura de 45px*/
+    padding: 0 40px 0 10px;/*margenes del input*/
+    transition: .3s ease all;/*transicion de tamaño*/
+    font-size: 15px;/*para que el texto sea mas liviano*/
 }
 .form__input:focus {
-    border: 3px solid #46a2fd;
-    /*borde del input es de 3px ahora es azul*/
-    outline: none;
-    /*para que el outline del navegador no se vea*/
-    box-shadow: 0 0 5px rgba(163, 163, 163, 0.4);
-    /*sombra del input*/
+    border: 3px solid #46a2fd;/*borde del input es de 3px ahora es azul*/
+    outline: none;/*para que el outline del navegador no se vea*/
+    box-shadow: 0 0 5px rgba(163, 163, 163, 0.4);/*sombra del input*/
 }
 .form__input-error {
     font-size: 12px;/*tamaño del texto del mesaje de error */
@@ -578,7 +590,7 @@ textarea{/*para que se vea el textarea*/
 
         width: 80%;/*ancho del contenedor*/
         top: 80%;/*centra el contenido*/
-        min-width: 340px;/*ancho minimo*/
+        min-width: 250px;/*ancho minimo*/
     }
     /*------------------------------------------------------*/
     /*Formularios contacto*/
@@ -590,7 +602,7 @@ textarea{/*para que se vea el textarea*/
     .contenedor__contacto form {
         width: 80%;/*ancho del contenedor*/
         top: 60%;/*centra el contenido*/
-        min-width: 340px;/*ancho minimo*/
+        min-width: 250px;/*ancho minimo*/
     }
 
 
