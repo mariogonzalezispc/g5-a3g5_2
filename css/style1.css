@@ -115,7 +115,55 @@ text-decoration: none;
 
     }
 }
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px)and (orientation: landscape) {
+    main {
+        margin-top: 150px;
+ 
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        padding: 10px 0 0 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -710px;
+        transition: 0.2s;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
+    .nav-menu__visible{
+        right: -10px;
 
+    }
+}
 
 
 /*--------------------------------------------------------------*/
@@ -177,6 +225,7 @@ text-decoration: none;
     }
     .nav-menu__visible{
         right: -10px;
+        
 
     }
 }

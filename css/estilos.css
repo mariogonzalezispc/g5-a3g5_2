@@ -496,12 +496,12 @@ textarea{/*para que se vea el textarea*/
     /*Formularios contacto*/
     /*------------------------------------------------------*/
     .form__contacto {
-        display: block;/*para que se vea el formulario en forma de columna*/
-        /*display: column;*/
+        /*display: block;/*para que se vea el formulario en forma de columna*/
+        display: column;
     }
     .contenedor__contacto form {
         width: 75%;/*ancho del contenedor*/
-        top: 70%;/*centra el contenido*/
+        top: 500px;/*centra el contenido*/
         min-width: 500px;/*ancho minimo*/
     }
    
@@ -527,7 +527,7 @@ textarea{/*para que se vea el textarea*/
 /*--------------------------------------------------------------*/
 @media screen and (max-width: 576px) {
     main {
-        margin-top: 150px;
+        margin-top: 0px;
     }
     /*------------------------------------------------------*/
     /*Formularios login*/
@@ -548,11 +548,17 @@ textarea{/*para que se vea el textarea*/
     }
     .contenedor__login form {
         width: 100%;/*ancho del formulario*/
-        top:  50px;
+        /*top:  50px;*/
         padding: 30px 10px;/*espacio entre el formulario y el contenido*/
         background-color: rgba(0, 128, 255, 0.5);
         position: absolute;
         border-radius: 20px;/*borde redondeado*/
+
+        width: 80%;/*ancho del contenedor*/
+        top: 120px;/*centra el contenido*/
+        min-width: 300px;/*ancho minimo*/
+
+
     }
     .contenedor__login {
         width: 300px;
@@ -593,7 +599,7 @@ textarea{/*para que se vea el textarea*/
     }
     .contenedor__contacto form {
         width: 80%;/*ancho del contenedor*/
-        top: 500px;/*centra el contenido*/
+        top: 380px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
 
