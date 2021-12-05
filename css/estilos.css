@@ -556,7 +556,7 @@ textarea{/*para que se vea el textarea*/
         border-radius: 20px;/*borde redondeado*/
 
         width: 80%;/*ancho del contenedor*/
-        top: 120px;/*centra el contenido*/
+        top: 200px;/*centra el contenido*/
         min-width: 300px;/*ancho minimo*/
 
 
