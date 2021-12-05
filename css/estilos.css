@@ -34,6 +34,7 @@ footer {
     cursor: pointer;/*para que se manito en el puntero del mouse*/
     /*bottom: 0; /*aqui lo enviamos al fondo*/
     margin-bottom: 0px;/*espacio entre el footer y el contenido*/
+    z-index: -1;
 }
 
 
