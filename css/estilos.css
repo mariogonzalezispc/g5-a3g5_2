@@ -602,7 +602,7 @@ textarea{/*para que se vea el textarea*/
     .contenedor__contacto form {
         width: 85%;/*ancho del contenedor*/
         top: 400px;/*centra el contenido*/
-        min-width: 60%;/*ancho minimo*/
+        min-width: 250px;/*ancho minimo*/
     }
 
 
