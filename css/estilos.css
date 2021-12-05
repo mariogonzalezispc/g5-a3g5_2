@@ -36,16 +36,15 @@ main {
 }
 
 footer {
-    width: 100%;
+    width: 100%;/*ancho del footer*/
     background: rgba(0, 128, 255, 0.5);
-    color: white;
-    margin-left: 0px;
-    text-align: left;
-    position: relative;
-    cursor: pointer;
-    width: 100%;
-    bottom: 0; /*aqui lo enviamos al fondo*/
-    margin-bottom: 0px;
+    color: white;/*color del texto*/
+    margin-left: 0px;/*espacio entre el footer y el contenido*/
+    text-align: left;/*alineacion del texto*/
+    position: relative;/*para que se vea centrado*/
+    cursor: pointer;/*para que se manito en el puntero del mouse*/
+    /*bottom: 0; /*aqui lo enviamos al fondo*/
+    margin-bottom: 0px;/*espacio entre el footer y el contenido*/
 }
 
 
@@ -59,68 +58,44 @@ footer {
 }
 
 .caja__trasera {
-    width: 100%;
-    /*ancho de la caja trasera*/
-    padding: 10px 20px;
-    /*padding de la caja trasera*/
-    display: flex;
-    /*deja uno al lado del otro en forma horizontal*/
-    border-radius: 5px;
-    /*borde redondeado*/
-    justify-content: center;
-    /*centra el contenido*/
+    width: 100%; /*ancho de la caja trasera*/
+    padding: 10px 20px;/*padding de la caja trasera*/
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    border-radius: 5px;/*borde redondeado*/
+    justify-content: center;/*centra el contenido*/
     /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
-    background-color: rgba(0, 128, 255, 0.5);
-    /*color de fondo caja trasera*/
+    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
 }
 
-.caja__trasera div {
-    /*para centrar el contenido*/
-    margin: 100px 40px;
-    /*margen de la caja trasera*/
-    color: white;
-    /*color de texto*/
-    transition: all 0.5s;
-    /*transicion de tamaño*/
+.caja__trasera div { /*para centrar el contenido*/
+    margin: 100px 40px; /*margen de la caja trasera*/
+    color: white;/*color de texto*/
+    transition: all 0.5s;/*transicion de tamaño*/
 }
 
 .caja__trasera div p,
-/*para centrar el contenido*/
-.caja__trasera div button {
-    /*para centrar el contenido*/
-    margin-top: 30px;
-    /*margen de la caja trasera*/
+.caja__trasera div button { /*para centrar el contenido*/
+    margin-top: 30px; /*margen de la caja trasera*/
 }
 
 .caja__trasera h3 {
-    font-weight: 400;
-    /*para que el texto sea mas liviano*/
-    font-size: 26pxm;
-    /*para que el texto sea mas liviano*/
+    font-weight: 400;/*para que el texto sea mas fino */
+    font-size: 26px;/*tamaño del texto*/
 }
 
 
 .caja__trasera button,
  .button_vs{
     /*para centrar el contenido*/
-    padding: 10px 40px;
-    /*para que el texto sea mas liviano*/
-    border: 2px solid;
-    /*para darle un borde al boton*/
-    background: transparent;
-    /*para que el boton sea transparente*/
-    font-size: 14px;
-    /*para que el texto sea mas liviano*/
-    font-weight: 600;
-    /*para que el texto sea mas liviano*/
-    cursor: pointer;
-    /*para que el cursor sea una mano*/
-    color: white;
-    /*para que el texto sea mas liviano*/
-    outline: none;
-    /*para que el outline no se vea*/
-    transition: all 0.4s;
-    /*transicion de tamaño*/
+    padding: 10px 40px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 14px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea mas liviano*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
 }
 
 
@@ -463,22 +438,16 @@ textarea{/*para que se vea el textarea*/
 }
 
 
-
 /*------------------------------------------------------*/
 /*Formularios contacto*/
 /*------------------------------------------------------*/
-
 .contenedor__contacto {
-    display: flex;
-    /*deja uno al lado del otro en forma horizontal*/
-    align-items: center;
-    /*centra el contenido*/
-    width: 100%;
-    /*ancho del contenedor*/
-    max-width: 800px;
-    /*ancho maximo */
+    display: flex; /*deja uno al lado del otro en forma horizontal*/
+    align-items: center;/*centra el contenido*/
+    width: 100%;/*ancho del contenedor*/
+    max-width: 800px;/*ancho maximo */
     /*position: relative;*/
-    top: 200px;
+    top: 600px;
     left: 200px;
     background-color: white;
 
@@ -491,54 +460,7 @@ textarea{/*para que se vea el textarea*/
     /*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
-    top: 60%;
-    /*centra el contenido*/
-    left: 50%;
-    /*centra el contenido*/
-    position: absolute;
-    transform: translate(-50%, -50%);
-    /*centra el contenido*/
-    box-sizing: border-box;
-    /*para que no se vea el borde*/
-    border-radius: 20px;
-    /*borde redondeado*/
-}
-
-.form__contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-
-
-/*------------------------------------------------------*/
-/*Formularios contacto*/
-/*------------------------------------------------------*/
-
-.contenedor__contacto {
-    display: flex;
-    /*deja uno al lado del otro en forma horizontal*/
-    align-items: center;
-    /*centra el contenido*/
-    width: 100%;
-    /*ancho del contenedor*/
-    max-width: 800px;
-    /*ancho maximo */
-    /*position: relative;*/
-    top: 200px;
-    left: 200px;
-    background-color: white;
-
-}
-
-.contenedor__contacto form {
-    width: 75%;
-    /*ancho del contenedor*/
-    padding: 10px 20px;
-    /*Margenes de altura y laterales del formulario interiores*/
-    /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
-    background-color: rgba(0, 128, 255, 0.5);
-    top: 60%;
+    top: 50%;
     /*centra el contenido*/
     left: 50%;
     /*centra el contenido*/
@@ -555,6 +477,13 @@ textarea{/*para que se vea el textarea*/
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
+
+
+
+
+
+
 
 
 
