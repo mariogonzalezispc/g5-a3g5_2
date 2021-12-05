@@ -137,7 +137,7 @@ text-decoration: none;
         display: block;
         line-height: 60px;
         margin-left: 0px;
-        position: relative;
+        /*position: relative;*/
     }
     .nav-menu{
         flex-direction: column;
@@ -168,7 +168,7 @@ text-decoration: none;
     .mov {
         display: block;
         position: absolute;
-        margin-left: 120px;
+        margin-left: 90px;
     }
     .nav-toggle {
         line-height: 60px;
