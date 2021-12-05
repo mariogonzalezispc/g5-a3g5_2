@@ -600,9 +600,9 @@ textarea{/*para que se vea el textarea*/
         /*display: column;*/
     }
     .contenedor__contacto form {
-        width: 80%;/*ancho del contenedor*/
+        width: 90%;/*ancho del contenedor*/
         top: 400px;/*centra el contenido*/
-        min-width: 340px;/*ancho minimo*/
+        min-width: 80%;/*ancho minimo*/
     }
 
 
