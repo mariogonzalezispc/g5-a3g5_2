@@ -27,14 +27,19 @@ main {
 footer {
     width: 100%;/*ancho del footer*/
     background: rgba(0, 128, 255, 0.5);
+    height: 435px;/*alto del footer*/
     color: white;/*color del texto*/
     margin-left: 0px;/*espacio entre el footer y el contenido*/
     text-align: left;/*alineacion del texto*/
     position: relative;/*para que se vea centrado*/
+    bottom: 0;
     cursor: pointer;/*para que se manito en el puntero del mouse*/
     /*bottom: 0; /*aqui lo enviamos al fondo*/
     margin-bottom: 0px;/*espacio entre el footer y el contenido*/
     z-index: -1;
+}
+.contenedor_pantalla{
+    min-height: calc(100vh - 90px - 835px);
 }
 
 
