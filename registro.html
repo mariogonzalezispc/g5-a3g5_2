@@ -82,7 +82,29 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 <p class="form__input-error">El DNI es solo numerico ingresele sin puntos ni caracteres</p>
             </div>
             <!--------------------------------------------------------------------------------------->
-            <!------------Cuarto input pide E-mail al usuario --------------------------------------->
+            <!------------Cuarto input pide fecha de nacimiento al usuario -------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_email">
+                <label for="email" class="form__label">Fecha de nacimiento</label><!--etiqueta email-->
+                <div class="form__grupo__input" id="alerta_email"><!--div para mostrar alerta-->
+                    <input type="date" class="form__input" id="email" name="email" placeholder="" required>
+                    <i class="form_validacion_status far fa-times-circle"></i><!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">La direccion de correo esta erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Quinto input pide Telefono ------------------------------------------------>
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_email">
+                <label for="email" class="form__label">Telefono</label><!--etiqueta email-->
+                <div class="form__grupo__input" id="alerta_email"><!--div para mostrar alerta-->
+                    <input type="tel" class="form__input" id="email" name="email" placeholder="3516805709 (opcional)" required>
+                    <i class="form_validacion_status far fa-times-circle"></i><!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">La direccion de correo esta erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Sexto input pide E-mail al usuario ---------------------------------------->
             <!--------------------------------------------------------------------------------------->
             <div class="form__grupo" id="grupo_email">
                 <label for="email" class="form__label">Correo Electronico</label><!--etiqueta email-->
