@@ -396,74 +396,6 @@ textarea{/*para que se vea el textarea*/
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------*/
-/*Responsive para el formulario de login en tablet*/
-/*--------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-    main {
-        margin-top: 250px;
-    }
-    .caja__trasera {
-        display: none;
-        max-width: 650px;
-        height: 600px;
-        flex-direction: column;
-        margin: auto
-    }
-    .caja__trasera div {
-        margin: 100;
-        position: absolute;
-     }
-    .contenedor__login {
-        top: -100px;
-        left: -5px;
-        margin: auto;
-    }
-    .contenedor__login form {
-        position: relative;
-    }
-}
-
-/*--------------------------------------------------------------*/
-/*Responsive para el formulario de login en celulares*/
-/*--------------------------------------------------------------*/
-@media screen and (max-width: 576px) {
-    main {
-        margin-top: 100px;
-    }
-
-
-    .contenedor__login form {
-
-        width: 250px;
-        top: 0px;
-        left: 0px;
-        position: absolute;
-        display: flex;
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------*/
 /* footer estilos*/
 /*------------------------------------------------------*/
@@ -532,3 +464,87 @@ textarea{/*para que se vea el textarea*/
     height: 1px;
     background: grey;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px                                  */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 150px;
+    }
+    .contenedor__todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        background-color: transparent;
+        top: 1px;
+        left: 0px;
+    }
+    .caja__trasera {
+        display: none;
+    }
+    .contenedor__login {
+        width: 400px;
+        height: 400px;
+        left: 1px;
+    }
+      .contenedor__login form {
+        width: 100%;/*ancho del formulario*/
+        top:  50px;
+        padding: 30px 10px;/*espacio entre el formulario y el contenido*/
+        background: white;/*cambiar a blanco*/
+        position: relative;
+        border-radius: 20px;/*borde redondeado*/
+    }
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    main {
+        margin-top: 150px;
+    }
+    .contenedor__todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        background-color: transparent;
+        top: 1px;
+        left: 0px;
+    }
+    .caja__trasera {
+        display: none;
+    }
+    .contenedor__login {
+        width: 300px;
+        height: 300px;
+        left: 1px;
+    }
+      .contenedor__login form {
+        width: 100%;/*ancho del formulario*/
+        top:  50px;
+        padding: 30px 20px;/*espacio entre el formulario y el contenido*/
+        background: white;/*cambiar a blanco*/
+        position: relative;
+        border-radius: 20px;/*borde redondeado*/
+    }
+}
+
+

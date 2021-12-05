@@ -71,7 +71,9 @@ text-decoration: none;
 }
 
 
-
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     .nav-menu{
         flex-direction: column;
@@ -116,7 +118,9 @@ text-decoration: none;
 
 
 
-
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
 @media screen and (max-width: 576px) {
     .header{
         height: 60px;
