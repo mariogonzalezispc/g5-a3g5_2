@@ -496,7 +496,7 @@ textarea{/*para que se vea el textarea*/
     grid-gap: 20px;/*espacio entre columnas*/
 }
 .form_contacto__aviso {
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     padding: 1px 1px;
     margin-bottom: 1px;
@@ -652,6 +652,9 @@ textarea{/*para que se vea el textarea*/
 
         
     }
+    .contenedor__login form h2 {
+        color: rgba(255, 255, 255, 1);/*color del texto*/
+    }
     /*------------------------------------------------------*/
     /*Formularios registro*/
     /*------------------------------------------------------*/
@@ -687,7 +690,7 @@ textarea{/*para que se vea el textarea*/
         border-radius: 20px;/*borde redondeado*/
 
         width: 90%;/*ancho del contenedor*/
-        top: 410px;/*centra el contenido*/
+        top: 420px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
 
