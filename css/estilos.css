@@ -34,28 +34,16 @@ footer {
     margin-left: 0px;/*espacio entre el footer y el contenido*/
     /*text-align: left;/*alineacion del texto*/
     position: relative;/*para que se vea centrado*/
-     cursor: pointer;/*para que se manito en el puntero del mouse*/
+    cursor: pointer;/*para que se manito en el puntero del mouse*/
     margin-top: 600px;/*espacio entre el footer y el contenido*/
     margin-bottom: 0px;/*espacio entre el footer y el contenido*/
-    z-index: -1;
-    text-align: center;
-    padding: 1em;
+    z-index: -1;/*para que se vea por abajo de todo*/
+    text-align: center;/*alineacion del texto*/
+    padding: 1em;/*espacio entre el footer y el contenido*/
     align-self: flex-end;
 
 
-}/*
-.contenedor_pantalla{
-    min-height: calc(100vh - 90px - 835px);
 }
-.footer__div{
-    width: 100%;
-    margin-top: calc(100vh - 90px - 100px);
-    display: relative;
-    justify-content: center;
-    align-items: center;
-
-
-}*/
 /*------------------------------------------------------*/
 /* footer estilos*/
 /*------------------------------------------------------*/
@@ -70,7 +58,6 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
-
 }
 .box__footer .logo img {
     width: 60px;
@@ -139,6 +126,9 @@ footer {
     max-width: 1000px;/*ancho del main*/
     margin: auto;/*margen en 0*/
     position: relative;/*para que se vea el borde*/
+    background-color:transparent;/*color de fondo*/
+    min-height: 60vh;/*altura del contenedor*/
+
 }
 .caja__trasera {
     width: 100%; /*ancho de la caja trasera*/
@@ -245,7 +235,8 @@ footer {
     /*position: relative;*/
     top: 300px;/*posicion del contenedor con respecto a la parte superior*/
     left: 200px;/*posicion del contenedor con respecto a la parte izquierda*/
-    background-color: white;/*color de fondo*/
+    background-color:transparent;/*color de fondo*/
+    min-height: 60vh;/*altura del contenedor*/
 }
 .contenedor__registro form {
     width: 75%; /*ancho del contenedor*/
@@ -425,7 +416,10 @@ textarea{/*para que se vea el textarea*/
     /*position: relative;*/
     top: 600px;
     left: 200px;
-    background-color: white;
+    /*background-color: white;*/
+
+    background-color:transparent;/*color de fondo*/
+    min-height: 50vh;/*altura del contenedor*/
 }
 .contenedor__contacto form {
     width: 75%;/*ancho del contenedor*/
