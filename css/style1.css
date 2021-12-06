@@ -108,7 +108,7 @@ text-decoration: none;
     }
     .nav-toggle {
         display: block;
-        color: white;
+        color: black;
     }
     .nav-menu__visible{
         right: -10px;
@@ -157,7 +157,7 @@ text-decoration: none;
     }
     .nav-toggle {
         display: block;
-        color: white;
+        color: black;
     }
     .nav-menu__visible{
         right: -10px;
@@ -221,7 +221,7 @@ text-decoration: none;
     .nav-toggle {
         line-height: 60px;
         display: block;
-        color: white;
+        color: black;
     }
     .nav-menu__visible{
         right: -10px;
