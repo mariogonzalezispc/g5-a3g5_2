@@ -29,7 +29,7 @@ main {
 footer {
     width: 100%;/*ancho del footer*/
     background: rgba(0, 128, 255, 0.5);
-    height: 390px;/*alto del footer*/
+    height: auto;
     color: white;/*color del texto*/
     margin-left: 0px;/*espacio entre el footer y el contenido*/
     /*text-align: left;/*alineacion del texto*/
