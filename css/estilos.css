@@ -162,18 +162,13 @@ footer {
     color: white;/*para que el texto sea mas liviano*/
     outline: none;/*para que el outline no se vea*/
     transition: all 0.4s;/*transicion de tamaño*/
-
     height: 46px;/*altura del boton de enviar*/
     width: 50%;/*ancho del boton de enviar*/
     min-width: 40%;/*ancho minimo del boton de enviar*/
-
     margin: 0 auto;
     display: fixed;
     line-height: 23px;
     text-align: center;
-
-
-
 }
 .caja__trasera button:hover,
 .button_vs:hover {
