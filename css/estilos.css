@@ -262,7 +262,7 @@ footer {
     top: 90px;/*posicion del contenedor con respecto a la parte superior*/
     left: 1px;/*posicion del contenedor con respecto a la parte izquierda*/
     right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
-    background-color: grey;/*color de fondo*/
+    background-color: transparent;/*color de fondo*/
     min-height: 1200px;/*altura del contenedor*/
 }
 
