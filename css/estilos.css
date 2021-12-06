@@ -287,15 +287,15 @@ footer {
     align-items: center;/*centra el contenido*/
     width: 100%;/*ancho del contenedor*/
     max-width: 800px;/*ancho maximo */
-    /*position: relative;*/
     top: 300px;/*posicion del contenedor con respecto a la parte superior*/
     left: 200px;/*posicion del contenedor con respecto a la parte izquierda*/
     background-color:transparent;/*color de fondo*/
     min-height: 60vh;/*altura del contenedor*/
 }
+
 .contenedor__registro form {
     width: 75%; /*ancho del contenedor*/
-    padding: 10px 20px;/*Margenes de altura y laterales del formulario interiores*/
+    padding: 10px 10px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
     top: 69%;/*centra el contenido*/
@@ -305,10 +305,11 @@ footer {
     box-sizing: border-box;/*para que no se vea el borde*/
     border-radius: 20px; /*borde redondeado*/
 }
+
 .formulario__registro {
     display: grid;/*para que se vea el formulario en grilla*/
     grid-template-columns: 1fr 1fr;/*dos columnas del formulario*/
-    grid-gap: 20px;/*separacion entre columnas*/
+    grid-gap: 10px;/*separacion entre columnas*/
 }
 .form__label {
     display: block;/*para que se vea el label*/
@@ -497,7 +498,8 @@ textarea{/*para que se vea el textarea*/
 .form_contacto__aviso {
     font-size: 20px;
     color: white;
-    margin-bottom: 5px;
+    padding: 1px 1px;
+    margin-bottom: 1px;
     grid-column: span 2;
     text-align: center;
 }
