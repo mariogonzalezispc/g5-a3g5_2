@@ -558,9 +558,8 @@ textarea{/*para que se vea el textarea*/
     /*Formularios registro*/
     /*------------------------------------------------------*/
     .formulario__registro {
-        display: block;
-        /*display: column;*/
-    }
+        display: block;/*vista del formulario unica columna*/
+        }
     .contenedor__registro form {
         width: 55%; /*ancho del contenedor*/
         padding: 10px 10px;/*Margenes de altura y laterales del formulario interiores*/
@@ -571,7 +570,6 @@ textarea{/*para que se vea el textarea*/
         transform: translate(-50%, -50%);/*centra el contenido*/
         box-sizing: border-box;/*para que no se vea el borde*/
         border-radius: 20px; /*borde redondeado*/
-        
     }
     /*------------------------------------------------------*/
     /*Formularios contacto*/
@@ -679,7 +677,7 @@ textarea{/*para que se vea el textarea*/
     }
     .contenedor__contacto form {
         width: 90%;/*ancho del contenedor*/
-        top: 400px;/*centra el contenido*/
+        top: 410px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
 
