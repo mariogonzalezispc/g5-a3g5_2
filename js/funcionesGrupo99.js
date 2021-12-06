@@ -71,3 +71,53 @@ function direccionar() {
 //-----------------------------------------------------------------------------------
 //Envio por metodo get a otro formulario cointacto a otro formulario
 //-----------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------
+//filtrar componentes
+//-----------------------------------------------------------------------------------
+function borra() {//funcion para borrar los componentes que se muestran
+  var x, i;
+  x = document.querySelectorAll(".led,.dis, .tra, .ser");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+function todo() {//funcion para mostrar todos los componentes
+  var x, i;
+  x = document.querySelectorAll(".led,.dis, .tra, .ser");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}
+function leds() {//funcion para mostrar los componentes led
+  borra();
+  var x, i;
+  x = document.querySelectorAll(".led");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}
+function disp() {//funcion para mostrar los componentes display
+  borra();
+  var x, i;
+  x = document.querySelectorAll(".dis");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}
+function tran() {//funcion para mostrar los componentes transistores
+  borra();
+  var x, i;
+  x = document.querySelectorAll(".tra");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}
+function serv() {//funcion para mostrar los componentes transistores
+  borra();
+  var x, i;
+  x = document.querySelectorAll(".ser");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}

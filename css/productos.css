@@ -69,7 +69,6 @@
     display: flex;/*aca uno el cuadro de sombra con la imagen*/
     flex-direction: column;/*y la dejo unida*/
 }
-
 .products-list .product-item img{/*estableco estilos a la imagenes*/
     /*width: auto;/*ancho de la imagen*/
     max-width:100%;
@@ -86,5 +85,8 @@
     font-size: 20px;
     text-decoration: none;
     text-align: center;
-
 }
+.products-list .product-item .led{}
+.products-list .product-item .dis{}
+.products-list .product-item .tra{}
+.products-list .product-item .ser{}
