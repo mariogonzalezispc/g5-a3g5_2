@@ -258,12 +258,11 @@ footer {
     display: flex;/*deja uno al lado del otro en forma horizontal*/
     align-items: center;/*centra el contenido*/
     width: 100%;/*ancho del contenedor*/
-    max-width: 800px;/*ancho maximo */
     top: 90px;/*posicion del contenedor con respecto a la parte superior*/
     left: 1px;/*posicion del contenedor con respecto a la parte izquierda*/
     right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
     background-color: transparent;/*color de fondo*/
-    min-height: 1200px;/*altura del contenedor*/
+    min-height: 800px;/*altura del contenedor*/
 }
 
 .contenedor__registro form {
@@ -271,11 +270,10 @@ footer {
     padding: 10px 10px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
-    top: 0px;/*centra el contenido*/
-    left: 0px;/*centra el contenido*/
-    bottom: 1000px;
-    position: fixed;
-    /*transform: translate(-50%, -50%);/*centra el contenido*/
+    top: 70%;/*centra el contenido*/
+    left: 51%;/*centra el contenido*/
+    position: absolute;
+    transform: translate(-50%, -50%);/*centra el contenido*/
     box-sizing: border-box;/*para que no se vea el borde*/
     border-radius: 20px; /*borde redondeado*/
 
@@ -392,31 +390,27 @@ textarea{/*para que se vea el textarea*/
     resize: vertical;/*para que se vea vertical el textarea*/
     max-height: 200px;/*Maxima altura del textarea*/
     min-height: 100px;/*Minima altura del textarea*/
-    
 }
 .textarea_1{
     border: 3px solid transparent;/*borde del textarea transparente*/
-
 }
 .contenedor__contacto {
     display: flex; /*deja uno al lado del otro en forma horizontal*/
     align-items: center;/*centra el contenido*/
     width: 100%;/*ancho del contenedor*/
-    max-width: 800px;/*ancho maximo */
-    /*position: relative;*/
-    top: 600px;
-    left: 200px;
-    /*background-color: white;*/
-
-    background-color:transparent;/*color de fondo*/
-    min-height: 50vh;/*altura del contenedor*/
+    /*max-width: 800px;/*ancho maximo */
+    top: 0px;
+    left: 1px;
+    right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
+    background-color: transparent;/*color de fondo*/
+    height: 700px;/*altura del contenedor*/
 }
 .contenedor__contacto form {
     width: 75%;/*ancho del contenedor*/
     padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
-    top: 60%;/*centra el contenido*/
+    top: 65%;/*centra el contenido*/
     left: 50%;/*centra el contenido*/
     position: absolute;
     transform: translate(-50%, -50%);/*centra el contenido*/
@@ -591,6 +585,17 @@ textarea{/*para que se vea el textarea*/
     .formulario__registro {
         display: block;
     }
+    .contenedor__registro {
+        display: flex;/*deja uno al lado del otro en forma horizontal*/
+        align-items: center;/*centra el contenido*/
+        width: 100%;/*ancho del contenedor*/
+        max-width: 800px;/*ancho maximo */
+        top: 90px;/*posicion del contenedor con respecto a la parte superior*/
+        left: 1px;/*posicion del contenedor con respecto a la parte izquierda*/
+        right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
+        background-color:transparent;/*color de fondo*/
+        min-height: 1200px;/*altura del contenedor*/
+    }
     .contenedor__registro form {
         padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
         background-color: rgba(0, 128, 255, 0.5);
@@ -610,6 +615,20 @@ textarea{/*para que se vea el textarea*/
     .form__contacto {
         display: block;/*para que se vea el formulario en forma de columna*/
     }
+    .contenedor__contacto {
+        display: flex; /*deja uno al lado del otro en forma horizontal*/
+        align-items: center;/*centra el contenido*/
+        width: 100%;/*ancho del contenedor*/
+        max-width: 800px;/*ancho maximo */
+        top: 90px;
+        left: 1px;
+        right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
+        /*background-color: white;*/
+    
+        background-color:transparent;/*color de fondo*/
+        min-height: 900px;/*altura del contenedor*/
+    
+    }
     .contenedor__contacto form {
         padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
         background-color: rgba(0, 128, 255, 0.5);
@@ -620,7 +639,7 @@ textarea{/*para que se vea el textarea*/
         border-radius: 20px;/*borde redondeado*/
 
         width: 90%;/*ancho del contenedor*/
-        top: 420px;/*centra el contenido*/
+        top: 500px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
 
