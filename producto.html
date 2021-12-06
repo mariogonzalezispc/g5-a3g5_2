@@ -52,6 +52,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 <a href="#" class="category_item" category="dis" onclick="disp()">Display</a>
                 <a href="#" class="category_item" category="tra" onclick="tran()">Transistores</a>
                 <a href="#" class="category_item" category="ser" onclick="serv()">Servidores emb</a>
+                <a href="#" class="category_item" category="ser" onclick="gral()">Componentes vs</a>
             </div>
             <section class="products-list">
                 <!--------------------------------------------------------------------------------------->
@@ -59,20 +60,18 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     <img src="./img/rasp_8.jpg" alt="">
                     <a href="#">CPU Rasp1</a>
                  </div>  
-
-
                 <div class="product-item led" category="led" >
                     <img src="./img/Diodos_led_5mm_ro.jpg" alt="">
                     <a href="#">Led rojo 5mm</a>
                 </div>
-
-
+                <div class="product-item gra" category="ser" id="1">
+                    <img src="./img/Acelerometro_brujula.jpg" alt="">
+                    <a href="#">Acelerometro</a>
+                </div>
                 <div class="product-item ser">
                     <img src="./img/rasp_3_4.jpg" alt="">
                     <a href="#">CPU rasp3 4mgb</a>
                  </div>
-
-
                 <div class="product-item led" category="led">
                     <img src="./img/Diodos_led_5mm_az.jpg" alt="">
                     <a href="#">Led azul 5mm</a>
@@ -80,6 +79,10 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 <div class="product-item led" category="led">
                     <img src="./img/Diodos_led_5mm_rgb.jpg" alt="">
                     <a href="#">Led rgb 5mm</a>
+                </div>
+                <div class="product-item gra" >
+                    <img src="./img/Perilla_pote_6.jpg" alt="">
+                    <a href="#">Perillas colores</a>
                 </div>
                 <div class="product-item led" category="led">
                     <img src="./img/Diodos_led_10mm_ve.jpg" alt="">
@@ -102,6 +105,10 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     <img src="./img/Display_7seg_v.jpg" alt="">
                     <a href="#">Display 7 seg verde</a>
                 </div>
+                <div class="product-item gra">
+                    <img src="./img/Pulsa tachswitch_3.jpg" alt="">
+                    <a href="#">Pulsador 6mm</a>
+                </div>
                 <div class="product-item dis" category="dis">
                     <img src="./img/Display_lcd1602_backazul.jpg" alt="">
                     <a href="#">Display lcd1602a</a>
@@ -110,6 +117,10 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     <img src="./img/Display_lcd1602_backverde.jpg" alt="">
                     <a href="#">Display lcd1602v</a>
                 </div>
+                <div class="product-item ser" category="dis">
+                    <img src="./img/ESP-01.jpg" alt="">
+                    <a href="#">ESP 01</a>
+                </div>
                 <div class="product-item dis" category="dis">
                     <img src="./img/Display_lcd2004_backazul.jpg" alt="">
                     <a href="#">Display lcd2004a</a>
@@ -117,6 +128,10 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 <div class="product-item dis" category="dis">
                     <img src="./img/Display_lcd_ce.jpg" alt="">
                     <a href="#">Display 128x64 ce</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Pulsa tachswitch_6.jpg" alt="">
+                    <a href="#">Pulsador 10mm</a>
                 </div>
                 <div class="product-item dis" category="dis">
                     <img src="./img/Display_oled091.jpg" alt="">
@@ -134,6 +149,10 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                  <div class="product-item tra">
                     <img src="./img/Trans_2.jpg" alt="">
                     <a href="#">Transistores c3198</a>
+                 </div> 
+                 <div class="product-item gra">
+                    <img src="./img/Resistencias_1k.jpg" alt="">
+                    <a href="#">Resistencias 1K</a>
                  </div> 
                  <div class="product-item tra">
                     <img src="./img/Trans_3.jpg" alt="">
@@ -155,6 +174,14 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     <img src="./img/Trans_7.jpg" alt="">
                     <a href="#">Transistores a1941</a>
                  </div>  
+                 <div class="product-item ser">
+                    <img src="./img/esp8266 H12F.jpg" alt="">
+                    <a href="#">ESP8266 H121F</a>
+                 </div> 
+                 <div class="product-item gra">
+                    <img src="./img/Resistencias_1k.jpg" alt="">
+                    <a href="#">Resistencias 4K7</a>
+                 </div> 
                  <div class="product-item tra">
                     <img src="./img/Trans_8.jpg" alt="">
                     <a href="#">Transistores 61f</a>
@@ -188,7 +215,6 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     <img src="./img/rasp_7.jpg" alt="">
                     <a href="#">Pantalla VGA Rasp4</a>
                  </div>  
-
                  <div class="product-item led" category="led" id="1">
                     <img src="./img/Diodos_led_5mm_ve.jpg" alt="">
                     <a href="#">Led verde 5mm</a>

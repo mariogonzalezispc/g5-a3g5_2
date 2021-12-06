@@ -77,14 +77,14 @@ function direccionar() {
 //-----------------------------------------------------------------------------------
 function borra() {//funcion para borrar los componentes que se muestran
   var x, i;
-  x = document.querySelectorAll(".led,.dis, .tra, .ser");
+  x = document.querySelectorAll(".led,.dis, .tra, .ser, .gra");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
 }
 function todo() {//funcion para mostrar todos los componentes
   var x, i;
-  x = document.querySelectorAll(".led,.dis, .tra, .ser");
+  x = document.querySelectorAll(".led,.dis, .tra, .ser, .gra");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "flex";
   }
@@ -117,6 +117,14 @@ function serv() {//funcion para mostrar los componentes transistores
   borra();
   var x, i;
   x = document.querySelectorAll(".ser");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
+}
+function gral() {//funcion para mostrar los componentes transistores
+  borra();
+  var x, i;
+  x = document.querySelectorAll(".gra");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "flex";
   }
