@@ -23,25 +23,95 @@ main {
     margin-top: 100px;/*espacio entre el main y top*/
 
 }
- 
+/*------------------------------------------------------*/
+/* footer estilos*/
+/*------------------------------------------------------*/
 footer {
     width: 100%;/*ancho del footer*/
     background: rgba(0, 128, 255, 0.5);
-    height: 435px;/*alto del footer*/
+    height: 390px;/*alto del footer*/
     color: white;/*color del texto*/
     margin-left: 0px;/*espacio entre el footer y el contenido*/
-    text-align: left;/*alineacion del texto*/
+    /*text-align: left;/*alineacion del texto*/
     position: relative;/*para que se vea centrado*/
-    bottom: 0;
-    cursor: pointer;/*para que se manito en el puntero del mouse*/
-    /*bottom: 0; /*aqui lo enviamos al fondo*/
+     cursor: pointer;/*para que se manito en el puntero del mouse*/
+    margin-top: 600px;/*espacio entre el footer y el contenido*/
     margin-bottom: 0px;/*espacio entre el footer y el contenido*/
     z-index: -1;
-}
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
+
+
+}/*
 .contenedor_pantalla{
     min-height: calc(100vh - 90px - 835px);
 }
+.footer__div{
+    width: 100%;
+    margin-top: calc(100vh - 90px - 100px);
+    display: relative;
+    justify-content: center;
+    align-items: center;
 
+
+}*/
+/*------------------------------------------------------*/
+/* footer estilos*/
+/*------------------------------------------------------*/
+.tipo__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   /*max-width: 100%;
+    margin-top: 300px;*/
+}
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.box__footer .logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: aqua;
+    font-size: 18px;
+}
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: grey;
+    font-weight: 700;
+}
+.box__footer a {
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+.box__footer a:hover {
+    color: #46a2fd;
+}
+.box__footer a .fab {
+    font-size: 40px;
+    margin-right: 20px;
+}
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px;
+}
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background: grey;
+}
 
 
 
@@ -258,7 +328,6 @@ footer {
     display: block; /*para que se vea el mensaje de error*/
 }
 .form_validacion_status {
-    /*para que se vea el icono de validacion*/
     position: absolute;/*posiciona el icono de validacion*/
     right: 10px;/*margen derecho del icono de validacion*/
     bottom: 15px;/*margen inferior del icono de validacion*/
@@ -380,62 +449,9 @@ textarea{/*para que se vea el textarea*/
 
 
 
-/*------------------------------------------------------*/
-/* footer estilos*/
-/*------------------------------------------------------*/
-.tipo__footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
-    margin-top: 300px;
-}
-.box__footer {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
 
-}
-.box__footer .logo img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-}
-.box__footer .terms {
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: aqua;
-    font-size: 18px;
-}
-.box__footer h2 {
-    margin-bottom: 30px;
-    color: grey;
-    font-weight: 700;
-}
-.box__footer a {
-    margin-top: 10px;
-    color: white;
-    font-weight: 600;
-}
-.box__footer a:hover {
-    color: #46a2fd;
-}
-.box__footer a .fab {
-    font-size: 40px;
-    margin-right: 20px;
-}
-.box__copyright {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 20px 20px;
-}
-.box__copyright hr {
-    border: none;
-    height: 1px;
-    background: grey;
-}
+
+
 
 
 /*--------------------------------------------------------------*/
