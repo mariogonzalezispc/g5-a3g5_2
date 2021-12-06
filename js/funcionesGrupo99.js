@@ -40,11 +40,34 @@ function mi_Menu() {
 //-----------------------------------------------------------------------------------
 //Envio por metodo get a otro formulario cointacto a otro formulario
 //-----------------------------------------------------------------------------------
-function mi_Envio() {
-
-  alert("Enviado");
-  document.getElementById("nombres").setAttribute("readonly", "readonly");//input nombres se pone en modo solo lectura
-  document.getElementById("email").setAttribute("readonly", "readonly");//input email se pone en modo solo lectura
-  document.getElementById("telefono").setAttribute("readonly", "readonly");//input telefono se pone en modo solo lectura
-  document.getElementById("mensaje").setAttribute("readonly", "readonly");//input mensaje se pone en modo solo lectura
+function mi_Envio(url, ubicacion) {
+  document.getElementById("5").value =
+    "°" +
+    document.getElementById("1").value +
+    "°" +
+    document.getElementById("2").value +
+    "°" +
+    document.getElementById("3").value +
+    "°" +
+    document.getElementById("4").value +
+    "°";
+  window.open(url + '?payload=' + document.getElementById('5').value, ubicacion, 'width=870,height=700'); // return false;
+  direccionar();
 }
+
+function direccionar() {
+  window.location("");
+}
+
+
+
+/*
+  alert("Enviado");
+  document.getElementById("nombres").setAttribute("readonly", "readonly"); //input nombres se pone en modo solo lectura
+  document.getElementById("email").setAttribute("readonly", "readonly"); //input email se pone en modo solo lectura
+  document.getElementById("telefono").setAttribute("readonly", "readonly"); //input telefono se pone en modo solo lectura
+  document.getElementById("mensaje").setAttribute("readonly", "readonly"); //input mensaje se pone en modo solo lectura
+}*/
+//-----------------------------------------------------------------------------------
+//Envio por metodo get a otro formulario cointacto a otro formulario
+//-----------------------------------------------------------------------------------
