@@ -6,7 +6,7 @@
     width: 90%;
     margin: auto;
     background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
-    margin-top: 110px;
+    margin-top: 140px;
     border-radius: 20px;
 
 }
@@ -39,12 +39,16 @@
 .category_list .category_item {
     display: block;
     width: 90%;
-    padding: 15px 0;
+    padding: 10px 1px;
     margin-bottom: 20px;
-    background-color: aquamarine;
+    background-color: transparent;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;/*para que el texto sea mas liviano*/
+}
+.category_list .category_item:hover{
+    background-color: white;
+    color: rgba(0, 128, 255, 0.5);
 }
 .category_list .ct_item-activo{
     background:rgba(0, 128, 255, 0.5)
@@ -95,7 +99,7 @@
     padding: 1px 1px; /*espacios de arriba y laterales*/
     border: 2px solid;/*para darle un borde al boton*/
     background: transparent;/*para que el boton sea transparente*/
-    font-size: 15px;/*tamaño del texto */
+    font-size: 20px;/*tamaño del texto */
     font-weight: 600;/*para que el texto sea caso bold*/
     cursor: pointer;/*para que el cursor sea una mano*/
     color: white;/*para que el texto sea mas liviano*/
@@ -105,7 +109,6 @@
     width: 50%;/*ancho del boton de enviar*/
     min-width: 40%;/*ancho minimo del boton de enviar*/
     margin: 0 auto;
-    display: fixed;
     line-height: 23px;
     text-align: center;
     display: none;
@@ -199,8 +202,9 @@
 
     .category_list{/*hago que los filtros queden en columnas*/
         flex-direction: column;
-        margin-right: 0px;
+        margin-right: 8px;
         background-color: #034574;
+        font-size: 12px;
         position: fixed;
         right: 0;
         top: 250px;
