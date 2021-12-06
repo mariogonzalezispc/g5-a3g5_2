@@ -678,6 +678,14 @@ textarea{/*para que se vea el textarea*/
         display: block;/*para que se vea el formulario en forma de columna*/
     }
     .contenedor__contacto form {
+        padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
+        background-color: rgba(0, 128, 255, 0.5);
+        left: 50%;/*centra el contenido*/
+        position: absolute;
+        transform: translate(-50%, -50%);/*centra el contenido*/
+        box-sizing: border-box;/*para que no se vea el borde*/
+        border-radius: 20px;/*borde redondeado*/
+
         width: 90%;/*ancho del contenedor*/
         top: 410px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
