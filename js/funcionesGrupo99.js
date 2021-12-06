@@ -23,7 +23,7 @@ setTimeout("showTime()", 1000);//llamo a la funcion showTime cada segundo para s
 }
 
 //-----------------------------------------------------------------------------------
-//segunda funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
+//funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
 //-----------------------------------------------------------------------------------
 function mi_Menu() {
   //const navToggle = document.querySelector(".nav-toggle"); //obtengo el elemento nav-toggle
@@ -73,7 +73,7 @@ function direccionar() {
 //-----------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------
-//filtrar componentes
+//funcion DOM filtra componentes de la lista
 //-----------------------------------------------------------------------------------
 function borra() {//funcion para borrar los componentes que se muestran
   var x, i;
