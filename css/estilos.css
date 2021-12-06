@@ -202,37 +202,10 @@ footer {
     text-align: center;
 
 }
-
-.button_vs_r:hover {
+.button_vs_r:hover {/*clase colores inversos para boton login*/
     background: #46a2fd;/*el fonfo del boton sea blanco al pasar el puntero*/
     color: white;/*texto sera azul al pasar el puntero*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contenedor__login {
     display: flex;/*deja uno al lado del otro en forma horizontal*/
@@ -286,23 +259,28 @@ footer {
     align-items: center;/*centra el contenido*/
     width: 100%;/*ancho del contenedor*/
     max-width: 800px;/*ancho maximo */
-    top: 300px;/*posicion del contenedor con respecto a la parte superior*/
-    left: 200px;/*posicion del contenedor con respecto a la parte izquierda*/
-    background-color:transparent;/*color de fondo*/
-    min-height: 60vh;/*altura del contenedor*/
+    top: 90px;/*posicion del contenedor con respecto a la parte superior*/
+    left: 1px;/*posicion del contenedor con respecto a la parte izquierda*/
+    right: 1px;/*posicion del contenedor con respecto a la parte derecha*/
+    background-color: grey;/*color de fondo*/
+    min-height: 1200px;/*altura del contenedor*/
 }
 
 .contenedor__registro form {
-    width: 75%; /*ancho del contenedor*/
+    width: 80%; /*ancho del contenedor*/
     padding: 10px 10px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
-    top: 69%;/*centra el contenido*/
-    left: 50%;/*centra el contenido*/
-    position: absolute;
-    transform: translate(-50%, -50%);/*centra el contenido*/
+    top: 0px;/*centra el contenido*/
+    left: 0px;/*centra el contenido*/
+    bottom: 1000px;
+    position: fixed;
+    /*transform: translate(-50%, -50%);/*centra el contenido*/
     box-sizing: border-box;/*para que no se vea el borde*/
     border-radius: 20px; /*borde redondeado*/
+
+
+
 }
 .formulario__registro {
     display: grid;/*para que se vea el formulario en grilla*/
@@ -590,8 +568,6 @@ textarea{/*para que se vea el textarea*/
         width: 80%;/*ancho del contenedor*/
         top: 200px;/*centra el contenido*/
         min-width: 300px;/*ancho minimo*/
-
-
     }
     .contenedor__login {
         width: 300px;
@@ -604,8 +580,7 @@ textarea{/*para que se vea el textarea*/
         margin-left: 45px;/*distancia al borde del formulario boton centrado celu*/
         height: 45px;/*altura del boton de enviar*/
         width: 70%;/*ancho del boton de enviar para que texto no se encime*/
-
-        
+       
     }
     .contenedor__login form h2 {
         color: rgba(255, 255, 255, 1);/*color del texto*/
@@ -617,18 +592,18 @@ textarea{/*para que se vea el textarea*/
         display: block;
     }
     .contenedor__registro form {
-        padding: 30px 10px;/*Margenes de altura y laterales del formulario interiores*/
+        padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
         background-color: rgba(0, 128, 255, 0.5);
         left: 50%;/*centra el contenido*/
-        position: absolute;
+        position: relative;
         transform: translate(-50%, -50%);/*centra el contenido*/
         box-sizing: border-box;/*para que no se vea el borde*/
         border-radius: 20px; /*borde redondeado*/
 
         width: 90%;/*ancho del contenedor*/
-        top: 620px;/*centra el contenido*/
+        top: 580px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
-    }
+}
     /*------------------------------------------------------*/
     /*Formularios contacto*/
     /*------------------------------------------------------*/
