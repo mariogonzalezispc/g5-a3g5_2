@@ -153,16 +153,26 @@ footer {
     font-size: 26px;/*tamaño del texto*/
 }
 .caja__trasera button,
- .button_vs{
-    padding: 10px 40px; /*espacios de arriba y laterales*/
+.button_vs{
+    padding: 1px 1px; /*espacios de arriba y laterales*/
     border: 2px solid;/*para darle un borde al boton*/
     background: transparent;/*para que el boton sea transparente*/
-    font-size: 14px;/*tamaño del texto */
+    font-size: 15px;/*tamaño del texto */
     font-weight: 600;/*para que el texto sea caso bold*/
     cursor: pointer;/*para que el cursor sea una mano*/
     color: white;/*para que el texto sea mas liviano*/
     outline: none;/*para que el outline no se vea*/
     transition: all 0.4s;/*transicion de tamaño*/
+
+    height: 46px;/*altura del boton de enviar*/
+    width: 50%;/*ancho del boton de enviar*/
+    min-width: 40%;/*ancho minimo del boton de enviar*/
+
+    margin: 0 auto;
+    display: fixed;
+    line-height: 23px;
+    text-align: center;
+
 
 
 }
@@ -171,6 +181,60 @@ footer {
     background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
     color: #46a2fd;/*texto sera azul al pasar el puntero*/
 }
+.button_vs_r{
+    padding: 1px 1px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: #46a2fd;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+
+    height: 46px;/*altura del boton de enviar*/
+    width: 50%;/*ancho del boton de enviar*/
+    min-width: 40%;/*ancho minimo del boton de enviar*/
+    margin-left: 80px;
+
+    margin: 0 auto;
+    display: fixed;
+    line-height: 23px;
+    text-align: center;
+
+}
+
+.button_vs_r:hover {
+    background: #46a2fd;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: white;/*texto sera azul al pasar el puntero*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contenedor__login {
     display: flex;/*deja uno al lado del otro en forma horizontal*/
     align-items: center;/*centra el contenido*/
@@ -206,16 +270,7 @@ footer {
 }
 
 .contenedor__login form button {
-    padding: 10px 40px; /*espacios de arriba y laterales*/
-    border: 2px solid;/*para darle un borde al boton*/
-    background: transparent;/*para que el boton sea transparente*/
-    font-size: 14px;/*tamaño del texto */
-    font-weight: 600;/*para que el texto sea caso bold*/
-    cursor: pointer;/*para que el cursor sea una mano*/
-    color: rgba(0, 128, 255, 0.5);/*para que el texto sea mas liviano*/
-    outline: none;/*para que el outline no se vea*/
-    transition: all 0.4s;/*transicion de tamaño*/
-    margin-top: 40px;
+    padding: 1px 1px; /*espacios de arriba y laterales*/
     margin-left: 80px;
 }
 .formulario__login {
@@ -240,10 +295,10 @@ footer {
 }
 .contenedor__registro form {
     width: 75%; /*ancho del contenedor*/
-    padding: 20px 20px;/*Margenes de altura y laterales del formulario interiores*/
+    padding: 10px 20px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
-    top: 60%;/*centra el contenido*/
+    top: 69%;/*centra el contenido*/
     left: 50%;/*centra el contenido*/
     position: absolute;
     transform: translate(-50%, -50%);/*centra el contenido*/
@@ -340,25 +395,26 @@ footer {
     color: white;/*color del texto del boton de enviar*/
     font-size: 20px;/*tamaño del texto del boton de enviar*/
 }
+/*
 .form__btn-reset {
-    height: 45px;/*altura del boton de enviar*/
-    line-height: 45px;/*altura del texto del boton de enviar*/
-    width: 50%;/*ancho del boton de enviar*/
-    background: #46a2fd;/*color de fondo del boton de enviar*/
-    font-size: 15px;/*tamaño del texto del boton de enviar*/
-    position: relative;
-    padding: 10px 40px;
-    border: 2px solid; /*para darle un borde al boton*/
-    font-weight: 600;/*para que el texto sea mas liviano*/
-    cursor: pointer;/*para que el cursor sea una mano*/
-    color: white;
-    outline: none;/*para que el outline no se vea*/
-    transition: all 0.4s;/*transicion de tamaño*/
-    display: block;/*para que se vea el boton*/
-    align-items: center;/*para que el boton de centre en la columna*/
-    justify-content: center;
-    border-radius: 1px;/*borde redondeado del boton*/
-}
+  /*  height: 45px;/*altura del boton de enviar*/
+ /*   line-height: 45px;/*altura del texto del boton de enviar*/
+ /*   width: 50%;/*ancho del boton de enviar*/
+ /*   background: #46a2fd;/*color de fondo del boton de enviar*/
+ /*   font-size: 15px;/*tamaño del texto del boton de enviar*/
+ /*   position: relative;
+ /*   padding: 10px 40px;
+ /*   border: 2px solid; /*para darle un borde al boton*/
+ /*   font-weight: 600;/*para que el texto sea mas liviano*/
+ /*   cursor: pointer;/*para que el cursor sea una mano*/
+ /*   color: white;
+ /*   outline: none;/*para que el outline no se vea*/
+ /*   transition: all 0.4s;/*transicion de tamaño*/
+ /*   display: block;/*para que se vea el boton*/
+ /*   align-items: center;/*para que el boton de centre en la columna*/
+/*    justify-content: center;
+ /*   border-radius: 1px;/*borde redondeado del boton*/
+/*}*/
 .form__btn-reset:hover {
     background: white;/*color de fondo del boton de enviar*/
     color: #46a2fd;/*color del texto del boton de enviar*/
@@ -423,7 +479,7 @@ textarea{/*para que se vea el textarea*/
 }
 .contenedor__contacto form {
     width: 75%;/*ancho del contenedor*/
-    padding: 10px 20px;/*Margenes de altura y laterales del formulario interiores*/
+    padding: 20px 10px;/*Margenes de altura y laterales del formulario interiores*/
     /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
     background-color: rgba(0, 128, 255, 0.5);
     top: 60%;/*centra el contenido*/
@@ -438,8 +494,16 @@ textarea{/*para que se vea el textarea*/
     grid-template-columns: 1fr 1fr;/*para que se vea el formulario tenga 2 columnas*/
     grid-gap: 20px;/*espacio entre columnas*/
 }
-
-
+.form_contacto__aviso {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    grid-column: span 2;
+    text-align: center;
+}
+.form__grupo{
+    padding: 10px;
+}
 
 
 
@@ -501,7 +565,7 @@ textarea{/*para que se vea el textarea*/
         width: 55%; /*ancho del contenedor*/
         padding: 10px 10px;/*Margenes de altura y laterales del formulario interiores*/
         background-color: rgba(0, 128, 255, 0.5);
-        top: 80%;/*centra el contenido*/
+        top: 100%;/*centra el contenido*/
         left: 50%;/*centra el contenido*/
         position: absolute;
         transform: translate(-50%, -50%);/*centra el contenido*/
@@ -513,16 +577,13 @@ textarea{/*para que se vea el textarea*/
     /*Formularios contacto*/
     /*------------------------------------------------------*/
     .form__contacto {
-        /*display: block;/*para que se vea el formulario en forma de columna*/
-        display: column;
+        display: block;/*para que se vea el formulario en forma de columna*/
     }
     .contenedor__contacto form {
         width: 75%;/*ancho del contenedor*/
         top: 500px;/*centra el contenido*/
         min-width: 500px;/*ancho minimo*/
     }
-   
-
 }
 
 
@@ -584,15 +645,18 @@ textarea{/*para que se vea el textarea*/
     }
     .contenedor__login form button {
         color: rgba(255, 255, 255, 1);/*para que el texto sea mas liviano*/
-        margin-top: 0px;
-        margin-left: 55px;
+        margin-top: 0px;/*margen cero al borde de los inputs*/
+        margin-left: 45px;/*distancia al borde del formulario boton centrado celu*/
+        height: 45px;/*altura del boton de enviar*/
+        width: 70%;/*ancho del boton de enviar para que texto no se encime*/
+
+        
     }
     /*------------------------------------------------------*/
     /*Formularios registro*/
     /*------------------------------------------------------*/
     .formulario__registro {
         display: block;
-        display: column;
     }
     .contenedor__registro form {
         padding: 30px 10px;/*Margenes de altura y laterales del formulario interiores*/
@@ -604,7 +668,7 @@ textarea{/*para que se vea el textarea*/
         border-radius: 20px; /*borde redondeado*/
 
         width: 90%;/*ancho del contenedor*/
-        top: 500px;/*centra el contenido*/
+        top: 620px;/*centra el contenido*/
         min-width: 250px;/*ancho minimo*/
     }
     /*------------------------------------------------------*/
@@ -612,7 +676,6 @@ textarea{/*para que se vea el textarea*/
     /*------------------------------------------------------*/
     .form__contacto {
         display: block;/*para que se vea el formulario en forma de columna*/
-        /*display: column;*/
     }
     .contenedor__contacto form {
         width: 90%;/*ancho del contenedor*/
