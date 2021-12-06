@@ -29,6 +29,12 @@ function mi_Menu() {//funcion para expandir o colapsar menu
   navMenu.classList.toggle("nav-menu__visible");
   //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
 }
+function mi_Menu2() {//funcion para expandir o colapsar menu
+  const navMenu2 = document.querySelector(".category_list"); //obtengo el elemento nav-menu
+  navMenu2.classList.toggle("category_list__visible");
+  //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
+}
+
 
 //-----------------------------------------------------------------------------------
 //Validacion de la edad del usuario
