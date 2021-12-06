@@ -25,14 +25,12 @@ setTimeout("showTime()", 1000);//llamo a la funcion showTime cada segundo para s
 //-----------------------------------------------------------------------------------
 //segunda funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
 //-----------------------------------------------------------------------------------
-function mi_Menu(){
-    const navToggle = document.querySelector(".nav-toggle");//obtengo el elemento nav-toggle
-    const navMenu = document.querySelector(".nav-menu");//obtengo el elemento nav-menu
-
-    navMenu.classList.toggle("nav-menu__visible");
-    //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
-
-  }
+function mi_Menu() {
+  //const navToggle = document.querySelector(".nav-toggle"); //obtengo el elemento nav-toggle
+  const navMenu = document.querySelector(".nav-menu"); //obtengo el elemento nav-menu
+  navMenu.classList.toggle("nav-menu__visible");
+  //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
+}
 
 //-----------------------------------------------------------------------------------
 //Validacion de la edad del usuario
@@ -42,3 +40,11 @@ function mi_Menu(){
 //-----------------------------------------------------------------------------------
 //Envio por metodo get a otro formulario cointacto a otro formulario
 //-----------------------------------------------------------------------------------
+function mi_Envio() {
+
+  alert("Enviado");
+  document.getElementById("nombres").setAttribute("readonly", "readonly");//input nombres se pone en modo solo lectura
+  document.getElementById("email").setAttribute("readonly", "readonly");//input email se pone en modo solo lectura
+  document.getElementById("telefono").setAttribute("readonly", "readonly");//input telefono se pone en modo solo lectura
+  document.getElementById("mensaje").setAttribute("readonly", "readonly");//input mensaje se pone en modo solo lectura
+}

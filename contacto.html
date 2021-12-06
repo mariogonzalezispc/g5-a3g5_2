@@ -45,7 +45,6 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         <!--formulario contacto -->
         <!--------------------------------------------------------------------------->
         <form action="" class="form__contacto">
-            <!--   <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>-->
             <div class="form_contacto__aviso">
                 <h2>Consultas</h2>
             </div>
@@ -66,11 +65,12 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 
             <div>
                 <label for="mensaje" class="form__label">Ingrese su mensaje</label>
-                <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje" required></textarea>
+                <textarea class="textarea_1" name="mensaje" rows="10" cols="50" id="mensaje" 
+                placeholder="Escriba aqui su consulta" required></textarea>
             </div>
 
             <div class="form__grupo form__grupo-btn-enviar">
-                <button type="submit" class="button_vs" id="form__mensaje-envio">Enviar consulta</button>
+                <button type="submit" class="button_vs" id="form__mensaje-envio" onclick="mi_Envio()">Enviar consulta</button>
                 <!--<input type="submit" class="button_vs" name="Enviar"value="Enviar consulta">-->
             </div>
 
@@ -122,7 +122,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
           <hr>
           <br>
           <p>Copyright © 2021 - Todos los derechos reservados</p>
-          <b>Gestion deposito Cordoba</b>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
 
       </div>
   </footer>

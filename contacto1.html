@@ -44,7 +44,9 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         <!--------------------------------------------------------------------------->
         <form action="" class="form__contacto">
             <!--   <h2>Dejenos su comentario y nos contactaremos a la brevedad.</h2>-->
-
+            <div class="form_contacto__aviso">
+                <h2>Enviando su consulta</h2>
+            </div>
             <div>
                 <label for="nombres" class="form__label">Nombre ingresado</label>
                 <input type="text" class="form__input" placeholder="Su nombre" name="nombre" id="nombres" required>
@@ -73,11 +75,29 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
     </div>
     <!--------------------------------------------------------------------------->
 </main>
-
-    <!---------------footer ----------->
-
-    <!---------------footer ----------->
-
+<!-------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------->
+<!-------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+    var url_string = window.location.href; //
+    var url = new URL(url_string);
+     var c1 = url.searchParams.get("payload");
+    document.getElementById('5').value = c1;
+    let dimension=c1.length;
+    let ID=0;
+//---------------------------------------------------------------------------------------------------------------------------------------
+    for (let i = 0; i <=dimension-1; i++) {
+      if (c1[i]=="°"){
+       ID++;
+      }
+      if (c1[i]!="°"){
+      document.getElementById(ID).value = c1[i]+document.getElementById(ID).value;
+      }
+     }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+    function cerrar() {window.close()}
+//--------------------------------------------------------------------------------------------------------------------------------------- 
+</script>
     <script src="./js/script.js"></script>
     <script src="./js/funcionesGrupo99.js"></script>
 </body>
