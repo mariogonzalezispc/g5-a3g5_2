@@ -35,21 +35,6 @@ function mi_Menu2() {//funcion para expandir o colapsar menu
   //si el elemento nav-menu tiene la clase nav-menu__visible la quito y si no la agrego
 }
 
-//-----------------------------------------------------------------------------------
-//Validacion de la edad del usuario
-//-----------------------------------------------------------------------------------
-/*
-const fechaN = document.getElementById("fn");//obtengo el elemento edad
-
-window.addEventListener("load", function() {
-  fechaN.addEventListener("change", function(){
-    console.log(this.value);
-  });
-
-  
-}
-*/
-
 
 
 

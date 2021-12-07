@@ -49,6 +49,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <input type="hidden" id="1" name="tipo" value="1">
             <div class="form_contacto__aviso">
                 <h2>Registrarse</h2>
+                <br>
             </div>
             <!--------------------------------------------------------------------------------------->
             <!------------Primer input pide nombres al usuario -------------------------------------->
@@ -56,8 +57,8 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_nombres">
                 <label for="nombres" class="form__label">Nombres</label><!--etiqueta Nombres-->
                 <div class="form__grupo__input" id="form_nombres"><!--div para mostrar alerta-->
-                    <input autofocus type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres" required>
-                    <i class="form_validacion_status far fa-times-circle"></i><!--icono de alerta-->
+                    <input autofocus type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres">
+                    <!--<p class="error_2" id="error_1"></p>-->
                 </div><!-- fin del div nombres-->
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -66,7 +67,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_apellidos">
                 <label for="apellidos" class="form__label">Apellidos</label><!--etiqueta Apellidos-->
                 <div class="form__grupo__input" id="form_apellidos"><!--div para mostrar alerta-->
-                    <input type="text" class="form__input" id="apellidos" name="apellidos" placeholder="Apellidos"required>
+                    <input type="text" class="form__input" id="apellidos" name="apellidos" placeholder="Apellidos">
                 </div><!-- fin del div apellidos-->
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -75,7 +76,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_dni">
                 <label for="dni" class="form__label">DNI</label><!--etiqueta DNI-->
                 <div class="form__grupo__input" id="form_dni">
-                    <input type="text" class="form__input" id="dni" name="dni" placeholder="Documento de identidad"required>
+                    <input type="text" class="form__input" id="dni" name="dni" placeholder="Documento de identidad">
                 </div><!-- fin del div dni-->
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -84,7 +85,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_fn">
                 <label for="fecha" class="form__label">Fecha de nacimiento</label><!--etiqueta email-->
                 <div class="form__grupo__input" id="form_fn"><!--div para mostrar alerta-->
-                    <input type="date" class="form__input" id="fn" name="fecha" required>
+                    <input type="date" class="form__input" id="fn" name="fecha">
                 </div><!-- fin del div fecha nacimiento-->
              </div>
             <!--------------------------------------------------------------------------------------->
@@ -102,7 +103,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_email">
                 <label for="email" class="form__label">Correo Electronico</label><!--etiqueta email-->
                 <div class="form__grupo__input" id="form_email"><!--div para mostrar alerta-->
-                    <input type="email" class="form__input" id="email" name="email" placeholder="lapampa@argentina.com" required>
+                    <input type="email" class="form__input" id="email" name="email" placeholder="lapampa@argentina.com">
                     <i class="form_validacion_status far fa-times-circle"></i><!--icono de alerta-->
                 </div><!-- fin div para mostrar alerta-->
                 <p class="form__input-error">La direccion de correo esta erronea</p>
@@ -113,7 +114,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_clave1">
                 <label for="clave1" class="form__label">Contraseña</label><!--etiqueta clave1-->
                 <div class="form__grupo__input" id="form_clave1"><!--div para mostrar alerta-->
-                    <input type="password" class="form__input" id="clave1" name="clave1" placeholder="Contraseña"required>
+                    <input type="password" class="form__input" id="clave1" name="clave1" placeholder="Contraseña">
                     <i class="form_validacion_status far fa-times-circle"></i>
                     <!--icono de alerta-->
                 </div><!-- fin div para mostrar alerta-->
@@ -125,7 +126,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_clave2">
                 <label for="clave2" class="form__label">Repita Contraseña</label><!--etiqueta clave2-->
                 <div class="form__grupo__input" id="form_clave2"><!--div para mostrar alerta-->
-                    <input type="password" class="form__input" id="clave2" name="clave2" placeholder="Repita contraseña"required>
+                    <input type="password" class="form__input" id="clave2" name="clave2" placeholder="Repita contraseña">
                     <i class="form_validacion_status far fa-times-circle"></i> <!--icono de alerta-->
                 </div><!-- fin div -->
                 <p class="form__input-error">erronea</p>
@@ -195,6 +196,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/funcionesGrupo99.js"></script>
+  <script src="./js/validacion.js"></script>
 </body>
 </html>
 <!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
