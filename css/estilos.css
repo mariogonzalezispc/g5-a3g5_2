@@ -298,7 +298,7 @@ footer {
     font-weight: 600;/*para que el texto sea del tipo bold*/
     padding: 10px;/*para que el texto tenga margen del borde*/
     cursor: pointer;/*para que el cursor sea una mano*/
-    font-size: 20px;/*para que el texto sea mas liviano*/
+    font-size: 15px;/*para que el texto sea mas liviano*/
     color: white;/*para que el texto sea mas liviano*/
 }
 .form__grupo__input {
@@ -360,6 +360,18 @@ footer {
  /*   transition: all 0.4s;/*transicion de tamaño*/
 /*}*/
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------*/
 /*inicio*/
 /*------------------------------------------------------*/
@@ -367,12 +379,14 @@ footer {
     font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
     max-width: 1300px;
     width: 90%;
-    height: 1000px;
+    height: 1100px;
     margin: auto;
-    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
+    /*background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    background-color: rgba(255, 255, 255, 0.6);/*color de fondo caja trasera*/
     margin-top: 100px;
     border-radius: 5px;
     padding: 20px;
+
 }
 .contenedor_inicio h2{
     font-size: 25px;
@@ -388,58 +402,110 @@ footer {
 .contenedor_inicio .imagenes_1{
     width: 100%;
     height: 700px;
-    background-color: grey;
+    /*background-color: grey;*/
 }
 .contenedor_inicio .noticias{
     width: 100%;
-    height: 30%;
-    background-color: aquamarine;
+    height: 38%;
+    /*background-color: aquamarine;*/
+    display: inline-block;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 20px 20px 20px 20px;
+  
 }
-.novedades{
+.contenedor_inicio .imagenes_1 .novedades{
     display: flex;/*para que se puedan ver en columnas*/
     flex-direction: column;
     width: 78%;/*ancho de los botones de filtro*/
     height: 550px;
     padding: 10px 10px;/*alejo el boton del borde del contenedor*/
-    background-color: orange;
+    /*background-color: orange;*/
 
 }
 
-.franquicias{
+.contenedor_inicio .imagenes_1 .franquicias{
     width: 21%;/*ancho del listado de productos*/
     flex-direction: column;
     flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
     padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
-    background-color: green;
+    /*background-color: green;*/
     height: 550px;
 }
+.contenedor_inicio .imagenes_1 .franquicias img{
+    width: 100%;
+    height: 75px;
+    align-items: center;
 
-.nota_1{
+}
+.contenedor_inicio .noticias h3{
+    font-size: 25px;
+    text-align: left;
+    color: #46a2fd;
+}
+.contenedor_inicio .noticias .rellena {
     display: flex;/*para que se puedan ver en columnas*/
-    flex-direction: column;
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 2%;/*ancho de los botones de filtro*/
+    height: 200px;
+    /*background-color: yellow;*/
+}
+.contenedor_inicio .noticias .nota_1 {
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
     width: 30%;/*ancho de los botones de filtro*/
-    height: 200px;
-    padding: 10px 10px;/*alejo el boton del borde del contenedor*/
-    background-color: orange;
+    height: 250px;
+    margin-left: 30px;
+    padding: 20px;
+    /*background-color: rgba(245, 179, 13, 0.5)*/
 
 }
 
-.nota_2{
-    width: 30%;/*ancho del listado de productos*/
-    flex-direction: column;
+.contenedor_inicio .noticias .nota_2{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
     flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
-    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
-    background-color: pink;
-    height: 200px;
-}
-.nota_3{
     width: 30%;/*ancho del listado de productos*/
-    flex-direction: column;
-    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
-    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
-    background-color: green;
-    height: 200px;
+    /*background-color: pink;*/
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    height: 250px;
 }
+.contenedor_inicio .noticias .nota_3{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho del listado de productos*/
+    left: 20%;
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    /*background-color: green;*/
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
