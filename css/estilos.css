@@ -360,17 +360,86 @@ footer {
  /*   transition: all 0.4s;/*transicion de tamaño*/
 /*}*/
 
+/*------------------------------------------------------*/
+/*inicio*/
+/*------------------------------------------------------*/
+.contenedor_inicio{
+    font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
+    max-width: 1300px;
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
+    margin-top: 100px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contenedor_inicio h2{
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+.contenedor_inicio h3{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
 
+.contenedor_inicio .imagenes_1{
+    width: 100%;
+    height: 700px;
+    background-color: grey;
+}
+.contenedor_inicio .noticias{
+    width: 100%;
+    height: 30%;
+    background-color: aquamarine;
+}
+.novedades{
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-direction: column;
+    width: 78%;/*ancho de los botones de filtro*/
+    height: 550px;
+    padding: 10px 10px;/*alejo el boton del borde del contenedor*/
+    background-color: orange;
 
+}
 
+.franquicias{
+    width: 21%;/*ancho del listado de productos*/
+    flex-direction: column;
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
+    background-color: green;
+    height: 550px;
+}
 
+.nota_1{
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-direction: column;
+    width: 30%;/*ancho de los botones de filtro*/
+    height: 200px;
+    padding: 10px 10px;/*alejo el boton del borde del contenedor*/
+    background-color: orange;
 
+}
 
-
-
-
-
-
+.nota_2{
+    width: 30%;/*ancho del listado de productos*/
+    flex-direction: column;
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
+    background-color: pink;
+    height: 200px;
+}
+.nota_3{
+    width: 30%;/*ancho del listado de productos*/
+    flex-direction: column;
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 10px 10px;/*alejo la imagen del borde del contenedor*/
+    background-color: green;
+    height: 200px;
+}
 
 
 

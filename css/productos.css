@@ -161,7 +161,7 @@
         padding: 0px 0;
         height: calc(100%-60px);
         overflow-y: auto;
-        right: -900px;*/
+        right: -900px;
         transition: 0.4s;
         display: block;
       }
