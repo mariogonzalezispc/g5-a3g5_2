@@ -299,7 +299,7 @@ footer {
     padding: 10px;/*para que el texto tenga margen del borde*/
     cursor: pointer;/*para que el cursor sea una mano*/
     font-size: 20px;/*para que el texto sea mas liviano*/
-    color: black;/*para que el texto sea mas liviano*/
+    color: white;/*para que el texto sea mas liviano*/
 }
 .form__grupo__input {
     position: relative;/*posiciona el campo delinput*/
