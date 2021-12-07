@@ -16,10 +16,10 @@ window.onload = function(){
 //Validacion del formulario registro
 //-----------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("form_registro").addEventListener('submit', validarFormulario);
+    document.getElementById("form_registro").addEventListener('submit', validarRegistro);
 });
 
-function validarFormulario(evento) {
+function validarRegistro(evento) {
     evento.preventDefault();
 
     var name = document.getElementById('nombres').value;//capturo value del input nombre
@@ -69,10 +69,12 @@ function validarFormulario(evento) {
     }
     if (edad <= 18) {
         alert("Eres menor de edad :( ");
+        return;
     }
     /*------------------------------------------------------------------------------------*/
     if (!regexEmail.test(email.value)) {
         alert('Formato de correo incorrecto');
+        return;
     }
     if (clave1.length < 6) {
         alert('La clave debe tener al menos 6 caracteres');
@@ -84,20 +86,14 @@ function validarFormulario(evento) {
     }
     this.submit();
 }
-
-
-
-
-
-
 //-----------------------------------------------------------------------------------
-//Validacion del formulario registro
+//Validacion del formulario contacto
 //-----------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("form__contacto").addEventListener('submit', validarFormulario);
+    document.getElementById("form__contacto").addEventListener('submit', validarContacto);
 });
 
-function validarFormulario(evento) {
+function validarContacto(evento) {
     evento.preventDefault();
     var name = document.getElementById('nombres').value;
     var correo = document.getElementById('email').value;
@@ -116,8 +112,8 @@ function validarFormulario(evento) {
     }
     if(!regexEmail.test(email.value)){
         alert('Formato de correo incorrecto');
+        return;
     }
-
     if (mensaje.length < 5) {
         if (mensaje.length == 0) {
             alert('No has escrito nada en el mensaje');
@@ -128,5 +124,35 @@ function validarFormulario(evento) {
         }
     }
 
+    this.submit();
+}
+
+//-----------------------------------------------------------------------------------
+//Validacion del formulario login
+//-----------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("form__login").addEventListener('submit', validarLogin);
+});
+
+function validarLogin(evento) {
+    evento.preventDefault();
+    var correo = document.getElementById('email').value;
+    var clave1 = document.getElementById('clave').value;
+
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if(!regexEmail.test(email.value)){
+        alert('Formato de correo incorrecto');
+        return;
+    }
+    if (clave1.length < 6) {
+        if (clave1.length == 0) {
+            alert('No has escrito nada en la contraseña');
+            return;
+        } else {
+            alert('La contraseña debe tener al menos seis letras');
+            return;
+        }
+    }
     this.submit();
 }

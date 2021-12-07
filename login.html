@@ -15,6 +15,7 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 </script><!-- integra libreria para reloj y fecha-->
 <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <body>
 <!--------------------------------------------------------------------------------------->
@@ -72,7 +73,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <!--formulario iniciar sesion-->
             <!--------------------------------------------------------------------------->
             <div class="contenedor__login">
-                <form action="" class="formulario__login">
+                <form action="" class="formulario__login"id="form__login">
                     <!--formulario iniciar sesion-->
                     <!--<h2>Iniciar sesion</h2>-->
                     <div class="form_contacto__aviso">
@@ -80,8 +81,8 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                     </div>
                     <!--Titulo formulario iniciar sesion-->
                     <input type="hidden" id="2" name="tipo" value="2">
-                    <input type="text" placeholder="Correo electronico" required>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="text" placeholder="Correo electronico" id="email">
+                    <input type="password" placeholder="Contraseña" id="clave">
                     <button class="button_vs_r">Iniciar sesion</button>
                 </form>
                 <!--fin formulario iniciar sesion-->
@@ -139,6 +140,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/funcionesGrupo99.js"></script>
+  <script src="./js/validacion.js"></script>
 </body>
 </html>
 <!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
