@@ -22,41 +22,41 @@ document.addEventListener("DOMContentLoaded", function () {
 function validarFormulario(evento) {
     evento.preventDefault();
 
-    var name = document.getElementById('nombres').value;
-    var ape = document.getElementById('apellidos').value;
-    var dni = document.getElementById('dni').value;
-    var fechaN = document.getElementById('fecha_n').value;
-    var correo = document.getElementById('email').value;
-    var clave1 = document.getElementById('clave1').value;
-    var clave2 = document.getElementById('clave2').value;
+    var name = document.getElementById('nombres').value;//capturo value del input nombre
+    var ape = document.getElementById('apellidos').value;//capturo value del input apellido
+    var dni = document.getElementById('dni').value;//capturo value del input dni
+    var fechaN = document.getElementById('fecha_n').value;//capturo value del input fecha nacimiento
+    var correo = document.getElementById('email').value;//capturo value del input correo  
+    var clave1 = document.getElementById('clave1').value;//capturo value del input clave1
+    var clave2 = document.getElementById('clave2').value;//capturo value del input clave2
 
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//creo una variable para la expresion regular
 
-    if (name.length < 3) {
-        if (name.length == 0) {
-            alert('No has escrito nada en el nombre');
-            return;
-        } else {
-            alert('El nombre debe tener al menos tres letras');
-            return;
+    if (name.length < 3) {//si el nombre es menor a 3
+        if (name.length == 0) {//si el nombre es igual a 0
+            alert('No has escrito nada en el nombre');//muestro un mensaje
+            return;//salgo del evento submit y lo interrumpo por completo 
+        } else {//  
+            alert('El nombre debe tener al menos tres letras');//muestro un mensaje
+            return;//salgo del evento submit y lo interrumpo por completo 
         }
     }
     if (ape.length < 3) {
         if (ape.length == 0) {
             alert('No has escrito nada en el apellido');
-            return;
+            return;//salgo del evento submit y lo interrumpo por completo
         } else {
             alert('El apellido debe tener al menos tres letras');
-            return;
+            return;//salgo del evento submit y lo interrumpo por completo 
         }
     }
     if (dni.length < 7) {
         if (dni.length == 0) {
             alert('No has escrito tu DNI');
-            return;
+            return;//salgo del evento submit y lo interrumpo por completo
         } else {
             alert('El DNI debe tener al menos siete numeros');
-            return;
+            return;//salgo del evento submit y lo interrumpo por completo
         }
     }
     /*------------------------------------------------------------------------------------*/
