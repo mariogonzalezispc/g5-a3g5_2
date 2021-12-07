@@ -59,7 +59,6 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
                 <div class="form__grupo__input" id="form_nombres"><!--div para mostrar alerta-->
                     <input autofocus type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres">
                     <!--<p class="error_2" id="error_nombres"></p>-->
-
                 </div><!-- fin del div nombres-->
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -77,7 +76,8 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_dni">
                 <label for="dni" class="form__label">DNI</label><!--etiqueta DNI-->
                 <div class="form__grupo__input" id="form_dni">
-                    <input type="text" class="form__input" id="dni" name="dni" placeholder="Documento de identidad">
+                    <input type="text" class="form__input" id="dni" name="dni" 
+                    placeholder="Documento de identidad sin puntos ni guiones">
                 </div><!-- fin del div dni-->
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -86,7 +86,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <div class="form__grupo" id="grupo_fn">
                 <label for="fecha" class="form__label">Fecha de nacimiento</label><!--etiqueta email-->
                 <div class="form__grupo__input" id="form_fn"><!--div para mostrar alerta-->
-                    <input type="date" class="form__input" id="fn" name="fecha">
+                    <input type="date" class="form__input" id="fecha_n" name="fecha" value="">
                 </div><!-- fin del div fecha nacimiento-->
              </div>
             <!--------------------------------------------------------------------------------------->
@@ -142,7 +142,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <!------------Octavo input boton de reset del formulario--------------------------------->
             <!--------------------------------------------------------------------------------------->
             <div class="form__grupo form__grupo-btn-enviar">
-                <input type="reset" class="button_vs" value="Reinicia formulario">
+                <input type="reset" class="button_vs" value="Reiniciar formulario">
             </div>
         </form>
     </div><!-- fin div para mostrar formulario-->

@@ -308,9 +308,9 @@ footer {
     width: 100%;    /*ancho del input es completo de la columna*/
     background: gainsboro;
     border: 3px solid transparent;/*borde del input es de 3px pero ahora solo tranaparente */
-    border-radius: 3px;/*borde redondeado*/
+    border-radius: 5px;/*borde redondeado*/
     height: 45px;/*altura del input*/
-    line-height: 45px;/*Texto de altura de 45px*/
+    line-height: 15px;/*Texto de altura de 45px*/
     padding: 0 40px 0 10px;/*margenes del input*/
     transition: .3s ease all;/*transicion de tamaño*/
     font-size: 15px;/*tamaño del texto*/
@@ -364,14 +364,13 @@ footer {
     font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
     max-width: 1300px;
     width: 90%;
-    height: 1100px;
+    height: 1250px;
     margin: auto;
     /*background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
     background-color: rgba(255, 255, 255, 0.6);/*color de fondo caja trasera*/
     margin-top: 100px;
     border-radius: 5px;
     padding: 20px;
-
 }
 .contenedor_inicio h2{
     font-size: 25px;
@@ -386,7 +385,7 @@ footer {
 
 .contenedor_inicio .imagenes_1{
     width: 100%;
-    height: 700px;
+    height: 850px;
     /*background-color: grey;*/
 }
 .contenedor_inicio .noticias{
@@ -529,6 +528,7 @@ textarea{/*para que se vea el textarea*/
     resize: vertical;/*para que se vea vertical el textarea*/
     max-height: 200px;/*Maxima altura del textarea*/
     min-height: 100px;/*Minima altura del textarea*/
+    border-radius: 5px;/*para que se vea redondeado el textarea*/
 }
 .textarea_1{
     border: 3px solid transparent;/*borde del textarea transparente*/
