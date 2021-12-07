@@ -486,7 +486,18 @@ footer {
     /*background-color: green;*/
     height: 250px;
 }
-
+.contenedor_inicio .noticias .nota_3 texto_3{
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    width: 30%;/*ancho del listado de productos*/
+    left: 20%;
+    padding: 10px 25px;/*alejo la imagen del borde del contenedor*/
+    /*background-color: green;*/
+    height: 250px;
+}
 
 
 
