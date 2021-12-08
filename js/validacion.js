@@ -1,4 +1,6 @@
 //-----------------------------------------------------------------------------------
+//sweet alert libreria de alertas de javascript
+//-----------------------------------------------------------------------------------
 //puesta en fecha actual del input data
 //-----------------------------------------------------------------------------------
 window.onload = function(){
@@ -34,28 +36,28 @@ function validarRegistro(evento) {
 
     if (name.length < 3) {//si el nombre es menor a 3
         if (name.length == 0) {//si el nombre es igual a 0
-            alert('No has escrito nada en el nombre');//muestro un mensaje
+            swal('No has escrito nada en el nombre','','error');//muestro un mensaje
             return;//salgo del evento submit y lo interrumpo por completo 
         } else {//  
-            alert('El nombre debe tener al menos tres letras');//muestro un mensaje
+            swal('El nombre debe tener al menos tres letras','','error');//muestro un mensaje
             return;//salgo del evento submit y lo interrumpo por completo 
         }
     }
     if (ape.length < 3) {
         if (ape.length == 0) {
-            alert('No has escrito nada en el apellido');
+            swal('No has escrito nada en el apellido','','error');
             return;//salgo del evento submit y lo interrumpo por completo
         } else {
-            alert('El apellido debe tener al menos tres letras');
+            swal('El apellido debe tener al menos tres letras','','error');
             return;//salgo del evento submit y lo interrumpo por completo 
         }
     }
     if (dni.length < 7) {
         if (dni.length == 0) {
-            alert('No has escrito tu DNI');
+            swal('No has escrito tu DNI','','error');
             return;//salgo del evento submit y lo interrumpo por completo
         } else {
-            alert('El DNI debe tener al menos siete numeros');
+            swal('El DNI debe tener al menos siete numeros','','error');
             return;//salgo del evento submit y lo interrumpo por completo
         }
     }
@@ -68,22 +70,29 @@ function validarRegistro(evento) {
         edad--;
     }
     if (edad <= 18) {
-        alert("Eres menor de edad :( ");
+        swal("Eres menor de edad :( ",'','error');
         return;
     }
     /*------------------------------------------------------------------------------------*/
     if (!regexEmail.test(email.value)) {
-        alert('Formato de correo incorrecto');
+        swal('Formato de correo incorrecto','','error');
         return;
     }
-    if (clave1.length < 6) {
-        alert('La clave debe tener al menos 6 caracteres');
-        return;
+
+    if (clave1.length < 5) {
+        if (clave1.length == 0) {
+            swal('No cargo ninguna contraseña','','error');
+            return;
+        } else {
+            swal('La clave debe tener al menos 6 caracteres','','error');
+            return;
+        }
     }
     if (clave2.length < 6 || clave2 != clave1) {
-        alert('Repita las dos contraseñas no estan iguales');
+        swal('Repita las dos contraseñas no estan iguales','','error');
         return;
     }
+    swal('Sus datos se cargaran ahora','','success');
     this.submit();
 }
 //-----------------------------------------------------------------------------------
@@ -103,27 +112,26 @@ function validarContacto(evento) {
 
     if (name.length < 3) {
         if (name.length == 0) {
-            alert('No has escrito nada en el nombre');
+            swal('No has escrito nada en el nombre','','error');
             return;
         } else {
-            alert('El nombre debe tener al menos tres letras');
+            swal('El nombre debe tener al menos tres letras','','error');
             return;
         }
     }
     if(!regexEmail.test(email.value)){
-        alert('Formato de correo incorrecto');
+        swal('Formato de correo incorrecto','','error');
         return;
     }
     if (mensaje.length < 5) {
         if (mensaje.length == 0) {
-            alert('No has escrito nada en el mensaje');
+            swal('No has escrito nada en el mensaje','','error');
             return;
         } else {
-            alert('El mensaje debe tener al menos cinco letras');
+            swal('El mensaje debe tener al menos cinco letras','','error');
             return;
         }
     }
-
     this.submit();
 }
 
@@ -142,15 +150,15 @@ function validarLogin(evento) {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if(!regexEmail.test(email.value)){
-        alert('Formato de correo incorrecto');
+        swal('Formato de correo incorrecto','','error');
         return;
     }
     if (clave1.length < 6) {
         if (clave1.length == 0) {
-            alert('No has escrito nada en la contraseña');
+            swal('No cargo ninguna contraseña','','error');
             return;
         } else {
-            alert('La contraseña debe tener al menos seis letras');
+            swal('La contraseña debe tener al menos seis letras','','error');
             return;
         }
     }

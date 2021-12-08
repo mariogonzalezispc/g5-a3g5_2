@@ -400,7 +400,7 @@ footer {
 .contenedor_inicio .imagenes_1 .novedades{
     display: flex;/*para que se puedan ver en columnas*/
     flex-direction: column;
-    width: 78%;/*ancho de los botones de filtro*/
+    width: 78%;
     height: 550px;
     padding: 10px 10px;/*alejo el boton del borde del contenedor*/
     /*background-color: orange;*/
