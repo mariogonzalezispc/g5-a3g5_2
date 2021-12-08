@@ -1,0 +1,175 @@
+
+.wrap2{
+    font-family: 'Open Sans', sans-serif;/*tipo de letra de google*/
+    max-width: 1250px;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
+    margin-top: 140px;
+    border-radius: 20px;
+
+}
+.wrap2 h1{
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    margin: 15px 10px;
+}
+.wrap2 h1:after{
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin: 20px 50px;
+}
+/*------------------------------------------------------------*/
+/*estilos de los franquicias*/
+/*------------------------------------------------------------*/
+.store{
+    display: flex;/*para que se puedan ver en columnas*/
+}
+.listado-franquicias{/*hago que los filtros queden en columnas*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-direction: column;
+    width: 25%;/*ancho de los botones de filtro*/
+    padding: 20px;/*alejo el boton del borde del contenedor*/
+}
+.listado-franquicias img{/*hago que los filtros queden en columnas*/
+    width: 100%;
+    height: auto;
+}
+.listado-franquicias h2{/*hago que los filtros queden en columnas*/
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/*------------------------------------------------------------*/
+/*estilos de los novedades*/
+/*------------------------------------------------------------*/
+.listado-novedades{
+    width: 82%;/*ancho del listado de productos*/
+    display: flex;/*para que se puedan ver en columnas*/
+    flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+    padding: 10px;/*alejo la imagen del borde del contenedor*/
+}
+.listado-novedades .nota_1,
+.listado-novedades .nota_2,
+.listado-novedades .nota_3 {
+	width: 31.6%;
+	height:auto;
+	margin:5px;
+    padding: 10px 10px;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+}
+.listado-novedades h2{
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    display: inline-block;
+}
+.listado-novedades .titulo{
+    width: 97%;
+	height:auto;
+	margin:5px;
+    line-height: 10px;
+    padding: 10px 10px;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+   
+.listado-novedades  img{/*estableco estilos a la imagenes*/
+    width: 100%;
+    height: auto;/*alto de la imagen*/
+    object-fit: fill;/*para que se ajuste a la imagen*/
+    border-radius: 4px;/*para que se vea redondeado*/
+    padding: 10px;/*alejo la imagen del borde del contenedor*/
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para  768px                                  */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 150px;
+    }
+
+    .listado-novedades{
+        display: flex;/*para que se puedan ver en columnas*/
+        flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+        padding: 20px;/*alejo la imagen del borde del contenedor*/
+        width: 90%;/*ancho de los productos*/
+        margin-left: 3%;
+        margin-bottom: 3%;
+        flex-direction: column;/*y la dejo unida*/
+        transition: all 0.3s;
+    }
+    .wrap h1:after{
+        display: none;
+    }
+    .listado-franquicias{
+        display: none;
+    }
+    .listado-novedades .nota_1,
+    .listado-novedades .nota_2,
+    .listado-novedades .nota_3 {
+	width: 96%;
+	height:auto;
+	margin:auto;
+    padding: 10px 10px;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo caja trasera*/
+}
+.listado-novedades .titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    main {
+        margin-top: 0px;
+    }
+    .listado-novedades{
+        width: 100%;/*ancho del listado de productos*/
+        display: flex;/*para que se puedan ver en columnas*/
+        flex-wrap: wrap; /*para que si superan el ancho padre se vea hacia abajo*/
+        padding: 20px;/*alejo la imagen del borde del contenedor*/
+    
+    }
+    .listado-novedades {
+        width: 100%;/*ancho de los productos*/
+        margin-left: 3%;
+        margin-bottom: 3%;
+        display: flex;/*aca uno el cuadro de sombra con la imagen*/
+        flex-direction: column;/*y la dejo unida*/
+        transition: all 0.3s;
+    }
+    .listado-franquicias{
+        display: none;
+    }
+
+
+    
+}
