@@ -52,9 +52,8 @@ function mi_Envio(url, ubicacion) { //funcion para enviar los datos del formular
     document.getElementById("mensaje").value + //cargo en input 5 hidden el valor del input 4
     "°"; //declaro una bandera para saber a donde termina cada input
   window.open(url + '?payload=' + document.getElementById('5').value, ubicacion, 'width=870,height=660');
+  return false;
 }
-
-
 
 //-----------------------------------------------------------------------------------
 //funcion DOM filtra componentes de la lista
@@ -136,4 +135,8 @@ function gral() { //funcion para mostrar los componentes transistores
 //-----------------------------------------------------------------------------------
 function sale() {
   window.close()
+}
+
+function ok_registro() {
+  swal('Su registro se cargo con exito !!!!!', '', 'success');
 }
