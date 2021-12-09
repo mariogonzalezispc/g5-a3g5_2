@@ -92,10 +92,9 @@ function validarRegistro(evento) {
         swal('Repita las dos contraseñas no estan iguales', '', 'error');
         return;
     }
-    //swal('se ha registrado con exito','','success');
     this.submit();
-
 }
+
 //-----------------------------------------------------------------------------------
 //Validacion del formulario contacto
 //-----------------------------------------------------------------------------------

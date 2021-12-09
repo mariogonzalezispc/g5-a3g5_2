@@ -60,7 +60,7 @@ function mi_Envio(url, ubicacion) { //funcion para enviar los datos del formular
 //-----------------------------------------------------------------------------------
 function borra() { //funcion para borrar los componentes que se muestran
   var x, i;
-  x = document.querySelectorAll(".led,.dis, .tra, .ser, .gra"); //obtengo todos los componentes
+  x = document.querySelectorAll(".led, .dis, .tra, .ser, .gra"); //obtengo todos los componentes
   for (i = 0; i < x.length; i++) { //recorro todos los componentes
     x[i].style.display = "none"; //oculto los componentes
   }
@@ -133,8 +133,8 @@ function gral() { //funcion para mostrar los componentes transistores
 //-----------------------------------------------------------------------------------
 //funcion de salida de pagina
 //-----------------------------------------------------------------------------------
-function sale() {
-  window.close()
+function sale() {//funcion para salir de la pagina
+  window.close()//cierro la pagina
 }
 
 function ok_registro() {

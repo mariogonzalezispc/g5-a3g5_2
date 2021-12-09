@@ -47,7 +47,7 @@ footer {
 /* footer estilos*/
 /*------------------------------------------------------*/
 .tipo__footer {
-    display: flex;
+    display: flex;/*para que se vea en forma de flex*/
     flex-wrap: wrap;
     justify-content: space-around;
    /*max-width: 100%;
@@ -64,13 +64,13 @@ footer {
     margin-bottom: 20px;
 }
 .box__footer .terms {
-    max-width: 450px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: aqua;
-    font-size: 16px;
-    text-align:justify;
-	text-justify:inter-word;
+    max-width: 450px;/*ancho maximo del div terminos*/
+    margin-top: 20px;/*espacio entre el div terminos y el contenido*/
+    font-weight: 500;/*para que se vea mas grande*/
+    color: aqua;/*color del texto*/
+    font-size: 16px;/*tamaño del texto*/
+    text-align:justify;/*alineacion del texto*/
+	text-justify:inter-word;/*alineacion del texto*/
 }
 .box__footer h2 {
     margin-bottom: 30px;
@@ -186,17 +186,14 @@ footer {
     color: #46a2fd;/*para que el texto sea mas liviano*/
     outline: none;/*para que el outline no se vea*/
     transition: all 0.4s;/*transicion de tamaño*/
-
     height: 46px;/*altura del boton de enviar*/
     width: 50%;/*ancho del boton de enviar*/
     min-width: 40%;/*ancho minimo del boton de enviar*/
     margin-left: 80px;
-
     margin: 0 auto;
     display: fixed;
     line-height: 23px;
     text-align: center;
-
 }
 .button_vs_r:hover {/*clase colores inversos para boton login*/
     background: #46a2fd;/*el fonfo del boton sea blanco al pasar el puntero*/
@@ -232,12 +229,9 @@ footer {
     margin-bottom: 20px;
     padding: 10px;
     border: none;
-
     font-size: 16px;
     outline: none;
 }
-
-
 .contenedor__login form button {
     padding: 1px 1px; /*espacios de arriba y laterales*/
     margin-left: 80px;
@@ -275,7 +269,9 @@ footer {
     border-radius: 20px; /*borde redondeado*/
 }
 /*------------------------------------------------------*/
-
+/*este contenedor es para el formulario de registro*/
+/*no funciona todavia es para poner el borde en rojo*/
+/*y aplicar abajo del intput algun requerimiento*/
 .contenedor__registro .error_2 {
     width: 300px;
     font-size: 16px;
@@ -285,12 +281,8 @@ footer {
     color: red;
     padding-top: 2px;
     padding: 1px;
-
 }
 /*------------------------------------------------------*/
-
-
-
 .formulario__registro {
     display: grid;/*para que se vea el formulario en grilla*/
     grid-template-columns: 1fr 1fr;/*dos columnas del formulario*/

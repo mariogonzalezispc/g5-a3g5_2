@@ -8,7 +8,6 @@
     /*background-color: rgba(0, 128, 255, 0.5);*//*color de fondo y tranparencia*/
     margin-top: 140px;
     border-radius: 20px;
-
 }
 
 .wrap2 h1 {
@@ -50,11 +49,10 @@
 }
 
 .listado-franquicias h2 {
-    color: rgba(0, 128, 255, 0.6);
-    /*color de fondo caja trasera*/
+    color: rgba(0, 128, 255, 0.9);/*color de letra para h2*/
     /*color: white;*/
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 700;/*ancho de letra*/
+    font-size: 25px;/*tamaño de letra*/
 }
 
 /*------------------------------------------------------------*/
@@ -70,14 +68,14 @@
 .listado-novedades .nota_1,
 .listado-novedades .nota_2,
 .listado-novedades .nota_3 {
-    width: 31.6%;
-    height: auto;
-    margin: 5px;
-    padding: 10px 10px;
-    border: white solid 1px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(0, 128, 255, 0.6);
+    width: 31.6%;/*ancho de las imagenes de novedades*/
+    height: auto;/*alto de las imagenes de novedades*/
+    margin: 5px;/*espacio entre las imagenes de novedades*/
+    padding: 10px 10px;/*espacio entre la imagen y el borde del contenedor*/
+    border: white solid 1px;/*borde de la imagen*/
+    border-radius: 5px;/*radio de lo bordes de las notras */
+    color: white;/*color de letra para las notas*/
+    background-color: rgba(0, 128, 255, 0.6);/*color de fondo y tranparencia*/
 }
 
 .listado-novedades h2 {/*estilos de los titulos hs de las novedades*/   
@@ -153,7 +151,6 @@
     .listado-novedades .nota_1,
     .listado-novedades .nota_2,
     .listado-novedades .nota_3 {
-
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -178,8 +175,6 @@
 /*Responsive para celulares 576px */
 /*--------------------------------------------------------------*/
 @media screen and (max-width: 576px) {
-
-
     .wrap2 {
         background-color: rgba(0, 128, 255, 0.5);
     }
