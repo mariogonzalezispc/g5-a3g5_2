@@ -137,7 +137,6 @@ function validarContacto(evento) {
     }
     this.submit();//si todo esta bien envio el formulario
     mi_Envio('contacto1.html', '_blank');//llamo a la funcion mi_Envio
-    voy_index(); //llamo a la funcion voy_index para cargar la pagina index
  }
 
 //-----------------------------------------------------------------------------------

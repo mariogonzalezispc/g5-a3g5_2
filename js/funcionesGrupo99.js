@@ -52,7 +52,6 @@ function mi_Envio(url, ubicacion) { //funcion para enviar los datos del formular
     document.getElementById("mensaje").value + //cargo en input 5 hidden el valor del input 4
     "°"; //declaro una bandera para saber a donde termina cada input
   window.open(url + '?payload=' + document.getElementById('5').value, ubicacion, 'width=870,height=660');
-  //voy_index(); //llamo a la funcion voy_index para cargar la pagina index
 }
 
 
@@ -137,8 +136,4 @@ function gral() { //funcion para mostrar los componentes transistores
 //-----------------------------------------------------------------------------------
 function sale() {
   window.close()
-}
-
-function voy_index() {
-  window.location("https://mariogonzalezispc.github.io/g5-a3g5_2/index.html")
 }
