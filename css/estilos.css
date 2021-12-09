@@ -209,7 +209,7 @@ footer {
     width: 100%;/*ancho del contenedor*/
     max-width: 380px;/*ancho maximo */
     position: relative;
-    top: -185px;
+    top: -200px;
     left: 10px;
     /*transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);/*transicion de tamaño*/
 }
@@ -226,16 +226,17 @@ footer {
     margin-bottom: 20px;/*espacio entre el texto y el contenido*/
     color: #46a2fd;/*color del texto*/
 }
-.contenedor__login form input {
-    width: 100%;
+
+.contenedor__login input {
     margin-top: 20px;/*cambiar a 20px*/
-    margin-bottom: 20px;/*cambiar a 20px*/
-    padding: 10px;/*cambiar a 10px*/
-    border: none;/*para que no se vea el borde*/
-    background: #f2f2f2;/*color de fondo*/
-    font-size: 16px;/*tamaño del texto*/
-    outline: none;/*para que el borde generado por el navegador no se vea*/
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+
+    font-size: 16px;
+    outline: none;
 }
+
 
 .contenedor__login form button {
     padding: 1px 1px; /*espacios de arriba y laterales*/

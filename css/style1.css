@@ -17,6 +17,9 @@
 /*color: white;*/
 color: black;
 text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+
 }
 
 .logo__img{
@@ -55,11 +58,12 @@ text-decoration: none;
     text-transform: uppercase;
 }
 .nav-menu-link{
-    padding: 8px 12px;
+    padding: 8px 10px;
 }
 .nav-menu-link:hover {
+    color: white;
     background-color: #508fbd;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .nav-toggle{ 
     color: white;
@@ -72,6 +76,34 @@ text-decoration: none;
     display: none;
 }
 
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 1050px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1050px) {
+    .web{
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px;
+        line-height: 60px;
+        width: max-content;/*no corta el titulo*/
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
+        .nav-menu-link{
+            padding: 8px 0px;
+        }
+
+}
 
 /*--------------------------------------------------------------*/
 /*Responsive para tablet 768px */
@@ -89,8 +121,15 @@ text-decoration: none;
         height: calc(100%-60px);
         overflow-y: auto;
         right: -800px;
-        transition: 1s;
+        transition: 0.2s;
     }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
     .nav-menu-item{
         font-size: 14px;
         line-height: 60px;
@@ -107,6 +146,7 @@ text-decoration: none;
         display: block;
         position: absolute;
         margin-left: 120px;
+        line-height: 60px;
     }
     .nav-toggle {
         display: block;
