@@ -23,7 +23,7 @@
 }
 
 .wrap2 h1:after {/*para el borde*/
-    content: '';/*para que no se vea el texto*/
+    content: '';
     width: 92%;/*ancho del borde con respecto al contenedor*/
     height: 3px;/*alto de la linea*/
     background-color: white;
@@ -41,18 +41,15 @@
     display: flex;/*para que se puedan ver en columnas*/
     flex-direction: column;
     width: 25%;/*ancho de los botones de filtro*/
-    padding: 20px;
-    /*alejo el boton del borde del contenedor*/
+    padding: 20px;/*alejo la imagen link del borde del contenedor*/
 }
 
 .listado-franquicias img {
-    /*hago que los filtros queden en columnas*/
-    width: 100%;
-    height: auto;
+    width: 100%;/*ancho de la imagen*/
+    height: auto;/*alto de la imagen*/
 }
 
 .listado-franquicias h2 {
-    /*hago que los filtros queden en columnas*/
     color: rgba(0, 128, 255, 0.6);
     /*color de fondo caja trasera*/
     /*color: white;*/
