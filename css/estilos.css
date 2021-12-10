@@ -29,12 +29,12 @@ main {
 footer {
     width: 100%;/*ancho del footer*/
     background: rgba(0, 128, 255, 0.5);
-    height: auto;
+    height: auto;/*alto del footer*/
     color: white;/*color del texto*/
     margin-left: 0px;/*espacio entre el footer y el contenido*/
     position: relative;/*para que se vea centrado*/
     cursor: pointer;/*para que se manito en el puntero del mouse*/
-    margin-top: 600px;/*espacio entre el footer y el contenido*/
+    margin-top: 100px;/*600px;/*espacio entre el footer y el contenido*/
     margin-bottom: 0px;/*espacio entre el footer y el contenido*/
     z-index: -1;/*para que se vea por abajo de todo*/
     text-align: left;/*alineacion del texto*/
