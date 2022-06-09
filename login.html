@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Gestion Deposito (ISPCA3G5) Login</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 </script><!-- integra libreria para reloj y fecha-->
-
-<link rel="stylesheet" href="responsive-nav.css">
-<script src="responsive-nav.js"></script>
-
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <body>
-
 <!--------------------------------------------------------------------------------------->
-<header class="encabezado">
-    <nav class="menu">
-        <div class="reloj">
-            <ul> 
-                <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
-                <li><a id="dia"class="now"></a></li>
-                <li><a id="hora"class="now"></a></li>
-                </ul>
-        </div>
-        <ul>
-            <li><a  href="index.html">Inicio</a></li>
-            <li><a  href="producto.html">Productos</a></li> 
-            <li><a  href="login.html" >Login</a></li> 
-            <li><a  href="registro.html" >Registro</a></li>              
-            <li><a  href="contacto.html">Contacto</a></li>
-            <li><a  href="acerca.html">Acerca de</a></li>
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
         </ul>
+
     </nav>
-</header>
+    </header>
 <!--------------------------------------------------------------------------------------->
 
 
@@ -60,18 +58,13 @@
                 <!--------------------------------------------------------------------------->
                 <div class="caja__trasera_login">
                     <!--esta clase esta en estilos.css-->
-                    <h3>¿Ya tiene cuenta?</h3>
-                    <!--Titulo caja trasera donde flota formulario login-->
-                    <p>Inicia sesion para entrat en la pagina</p>
-                    <!--Texto caja trasera donde flota formulario-->
-                    <button id="btn__iniciar-sesion">Iniciar sesion</button>
-                    <!--Boton caja trasera donde flota formulario-->
+                    <button id="btn__iniciar-sesion"></button>
                 </div>
                 <!--------------------------------------------------------------------------->
                 <div class="caja__trasera_registro">
                     <h3>¿Aun no tiene una cuenta?</h3>
                     <p>Registrate para que puedas iniciar sesion</p>
-                    <button id="btn__registrarse" onclick="location.href='registro.html'">Registrarse</button>
+                    <button class="button_vs" onclick="location.href='registro.html'">Registrarse</button>
                 </div>
                 <!--------------------------------------------------------------------------->
             </div>
@@ -80,14 +73,17 @@
             <!--formulario iniciar sesion-->
             <!--------------------------------------------------------------------------->
             <div class="contenedor__login">
-                <form action="" class="formulario__login">
+                <form action="" class="formulario__login"id="form__login">
                     <!--formulario iniciar sesion-->
-                    <h2>Iniciar sesion</h2>
+                    <!--<h2>Iniciar sesion</h2>-->
+                    <div class="form_contacto__aviso">
+                        <h2>Iniciar sesion</h2>
+                    </div>
                     <!--Titulo formulario iniciar sesion-->
                     <input type="hidden" id="2" name="tipo" value="2">
-                    <input type="text" placeholder="Correo electronico" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <button>Iniciar sesion</button>
+                    <input autofocus type="email" class="form__input" placeholder="Correo electronico" id="email">                    
+                    <input type="password" class="form__input " placeholder="Contraseña" id="clave">
+                    <button class="button_vs_r">Iniciar sesion</button>
                 </form>
                 <!--fin formulario iniciar sesion-->
             </div>
@@ -101,12 +97,54 @@
 
 
     <!---------------footer ----------->
+    <footer>
+        <div class="tipo__footer">
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./img/Logo.png" alt="aca va al logo">
+              </div>
+              <div class="terms">
+                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                    como representante de la compañía en ese mercado.
+                  La compañía cuenta también con consultores externos,
+                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                   educacionales y compañías renombradas.</p>
+              </div>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="">Ventas</a>
+              <a href="">Trabajos</a>
+              <a href="">Procesos</a>
+              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <br>
+          <p>Copyright © 2021 - Todos los derechos reservados</p>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
 
-
-    
-    <!---------------footer ----------->
-
-    <script src="./js/script.js"></script>
-    <script src="./js/funcionesGrupo99.js"></script>
+      </div>
+  </footer>
+  <!---------------footer ----------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/funcionesGrupo99.js"></script>
+  <script src="./js/validacion.js"></script>
 </body>
 </html>
+<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
